@@ -1,0 +1,55 @@
+# Paste-and-go UGMF for a NAS.
+#
+# This file needs nothing else — no source checkout, no Dockerfile, no build.
+# It pulls a prebuilt image, so it works on a NAS with little RAM and runs on
+# both x86 and ARM (the image is published for both).
+#
+# Requires the image to have been published once: run the "Publish container
+# image" workflow in the repo's Actions tab, then make the resulting package
+# public (github.com/users/Figgox/packages -> ugmf -> Package settings), or
+# `docker login ghcr.io` on the NAS first.
+#
+#   docker compose -f docker-compose.nas.yml up -d
+#
+# Then open http://<your-nas-ip>:3000
+
+services:
+  ugmf:
+    image: ghcr.io/figgox/ugmf:latest
+    container_name: ugmf
+    restart: unless-stopped
+
+    ports:
+      # Change the left number if 3000 is taken, e.g. "8080:3000".
+      - "3000:3000"
+
+    environment:
+      # Set this to your own zone. The container is UTC otherwise, which shifts
+      # the "Tonight" cutoff and printed show times away from your wall clock.
+      TZ: Etc/UTC
+
+      # Leave unset to run on the bundled dataset. The Spotify and Ticketmaster
+      # adapters are scaffolded but not implemented yet — setting these makes
+      # requests fail until they are written.
+      # SPOTIFY_CLIENT_ID: ""
+      # SPOTIFY_CLIENT_SECRET: ""
+      # TICKETMASTER_API_KEY: ""
+
+    # Nothing to mount: the app is stateless and the dataset is in the image.
+
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+      interval: 30s
+      timeout: 5s
+      start_period: 15s
+      retries: 3
+
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

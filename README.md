@@ -111,14 +111,37 @@ npm run seed     # regenerate lib/data/*.json (deterministic)
 ## Self-hosting with Docker
 
 The app is stateless and the whole dataset is baked into the image, so there is
-nothing to mount and no database to run.
+nothing to mount and no database to run. Health is at `/api/health`, which also
+reports which data source is live.
+
+There are two ways in, and the difference matters on a NAS.
+
+### Option A — paste one file, no source needed
+
+`docker-compose.nas.yml` is self-contained: it pulls a prebuilt image and has no
+`build:` line, so nothing else has to exist on the NAS. This is the one to use
+if your NAS is short on RAM or you would rather not keep a checkout on it.
 
 ```bash
+docker compose -f docker-compose.nas.yml up -d
+```
+
+It needs the image to have been published once. Run **Publish container image**
+from the repo's Actions tab (it builds for x86 and ARM and pushes to GHCR), then
+either make the package public — github.com/users/Figgox/packages → `ugmf` →
+Package settings — or `docker login ghcr.io` on the NAS.
+
+### Option B — build on the NAS from source
+
+`docker-compose.yml` has `build: .`, so it needs the full repo checked out
+beside it and enough memory to run `next build`.
+
+```bash
+git clone https://github.com/Figgox/UGMF.git && cd UGMF
 docker compose up -d --build
 ```
 
-Then open `http://<your-nas-ip>:3000`. Health is at `/api/health`, which also
-reports which data source is live.
+Either way, open `http://<your-nas-ip>:3000`.
 
 `next.config.ts` sets `output: "standalone"`, so the image ships a server
 bundled with only the `node_modules` it actually uses — no toolchain, no dev
@@ -131,16 +154,15 @@ dependencies. It runs as an unprivileged user and is roughly 200 MB.
   times are printed. It matters more once the Ticketmaster provider is live,
   because real event times are absolute instants that get rendered in the
   container's timezone.
-- **Build on the NAS, or match its architecture.** The Dockerfile is
-  arch-agnostic and `docker compose up --build` on the NAS itself always does
-  the right thing. If you build on an x86 laptop for an ARM NAS, the image will
-  not run — use
-  `docker buildx build --platform linux/arm64 -t ugmf:latest .` instead.
-- **`next build` wants roughly 2 GB of RAM.** On a 2 GB NAS it can be killed
-  mid-build. Build the image on a machine with more memory, then
-  `docker save ugmf:latest | gzip > ugmf.tar.gz`, copy it over, and
-  `docker load < ugmf.tar.gz` — then drop the `build:` line from the compose
-  file so it uses the loaded image.
+- **Architecture only matters for Option B.** The published image covers x86 and
+  ARM and Docker picks the right one, so Option A cannot get this wrong.
+  Building on the NAS itself is also always correct. What breaks is building on
+  an x86 laptop for an ARM NAS — for that use
+  `docker buildx build --platform linux/arm64 -t ugmf:latest .`
+- **`next build` wants roughly 2 GB of RAM**, which is the usual reason Option B
+  fails on smaller units — the build gets killed part-way. Use Option A, or
+  build elsewhere and move the image across with
+  `docker save ugmf:latest | gzip > ugmf.tar.gz` and `docker load < ugmf.tar.gz`.
 - **Port 3000** is usually free on Synology and QNAP (DSM itself uses 5000/5001).
   If it is taken, change the left-hand side of the port mapping, e.g.
   `"8080:3000"`.
@@ -149,14 +171,13 @@ Synology Container Manager and QNAP Container Station both read this
 `docker-compose.yml` directly — create a project pointing at the repo folder
 rather than using the CLI, if you prefer the GUI.
 
-To update after pulling new commits:
+To update: `docker compose -f docker-compose.nas.yml pull && docker compose -f
+docker-compose.nas.yml up -d` for Option A, or `git pull && docker compose up -d
+--build` for Option B.
 
-```bash
-docker compose up -d --build
-```
-
-Adding real API keys later means uncommenting them in `docker-compose.yml` and
-recreating the container — no rebuild needed, since they are read at runtime.
+Adding real API keys later means uncommenting them in whichever compose file you
+used and recreating the container — no rebuild needed, since they are read at
+runtime.
 
 ## Commands
 
