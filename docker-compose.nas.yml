@@ -4,10 +4,17 @@
 # It pulls a prebuilt image, so it works on a NAS with little RAM and runs on
 # both x86 and ARM (the image is published for both).
 #
-# Requires the image to have been published once: run the "Publish container
-# image" workflow in the repo's Actions tab, then make the resulting package
-# public (github.com/users/Figgox/packages -> ugmf -> Package settings), or
-# `docker login ghcr.io` on the NAS first.
+# This file pulls an image, it does not build one. That image has to exist
+# first, which takes two one-time steps on GitHub — not on the NAS:
+#
+#   1. Merge the branch to main. The publish workflow runs on pushes to main,
+#      so merging is what builds and pushes the first image.
+#   2. Make the package public: github.com/users/Figgox/packages -> ugmf ->
+#      Package settings. GHCR packages are private by default. Otherwise
+#      `docker login ghcr.io` on the NAS with a read:packages token.
+#
+# Before that, `up` fails with manifest unknown / denied — there is nothing
+# at ghcr.io/figgox/ugmf yet.
 #
 #   docker compose -f docker-compose.nas.yml up -d
 #

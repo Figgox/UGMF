@@ -11,7 +11,6 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
 
 jobs:
   test:
@@ -36,6 +35,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Container image names must be lowercase, and this repository is
+      # "Figgox/UGMF". Derived explicitly so the published name is guaranteed
+      # to match the ghcr.io/figgox/ugmf reference in the compose files.
+      - id: repo
+        run: echo "name=${GITHUB_REPOSITORY,,}" >> "$GITHUB_OUTPUT"
+
       # arm64 is emulated, which is why this job is slow. If your NAS is
       # x86 (most Synology Plus and QNAP TS-x53+ models are), drop
       # linux/arm64 from `platforms` below and the build roughly halves.
@@ -51,7 +56,7 @@ jobs:
       - id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: ${{ env.REGISTRY }}/${{ steps.repo.outputs.name }}
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=ref,event=tag

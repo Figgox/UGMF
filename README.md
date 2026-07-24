@@ -126,10 +126,22 @@ if your NAS is short on RAM or you would rather not keep a checkout on it.
 docker compose -f docker-compose.nas.yml up -d
 ```
 
-It needs the image to have been published once. Run **Publish container image**
-from the repo's Actions tab (it builds for x86 and ARM and pushes to GHCR), then
-either make the package public — github.com/users/Figgox/packages → `ugmf` →
-Package settings — or `docker login ghcr.io` on the NAS.
+It pulls, it does not build — so the image has to exist first. Two one-time
+steps, both on GitHub rather than the NAS:
+
+1. **Merge to `main`.** The publish workflow triggers on pushes to `main`, so
+   merging is what produces the first image; there is nothing to click. (The
+   Actions tab's "Run workflow" button only appears once a workflow is on the
+   default branch, so it is not an option before the merge.) The build covers
+   x86 and ARM and takes a while — the ARM half is emulated.
+2. **Make the package public** — github.com/users/Figgox/packages → `ugmf` →
+   Package settings. GHCR packages are private by default even on a public
+   repo. Otherwise run `docker login ghcr.io` on the NAS with a personal access
+   token that has `read:packages`.
+
+Until both are done, `docker compose -f docker-compose.nas.yml up -d` fails with
+a manifest-unknown or denied error, because there is nothing at
+`ghcr.io/figgox/ugmf` to pull.
 
 ### Option B — build on the NAS from source
 
