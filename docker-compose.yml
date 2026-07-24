@@ -1,0 +1,44 @@
+services:
+  ugmf:
+    build: .
+    image: ugmf:latest
+    container_name: ugmf
+    restart: unless-stopped
+
+    ports:
+      # Change the left number if 3000 is taken on your NAS — e.g. "8080:3000".
+      - "3000:3000"
+
+    environment:
+      # Set this to your own zone. The container is UTC otherwise, which shifts
+      # show times and the "Tonight" cutoff away from your wall clock — and will
+      # misreport real gig times once the Ticketmaster provider is wired up.
+      TZ: Etc/UTC
+
+      # Leave these unset to run on the bundled dataset. See .env.example — the
+      # adapters are scaffolded but not implemented yet, so setting them makes
+      # requests fail until they are written.
+      # SPOTIFY_CLIENT_ID: ""
+      # SPOTIFY_CLIENT_SECRET: ""
+      # TICKETMASTER_API_KEY: ""
+
+    # The app holds no state — everything is baked into the image — so there is
+    # nothing to mount. Pages that revalidate write to a cache inside the
+    # container and are rebuilt on restart.
+
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+      interval: 30s
+      timeout: 5s
+      start_period: 15s
+      retries: 3
+
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

@@ -1,0 +1,27 @@
+# Keep the build context small and the image reproducible — everything the
+# build needs is installed from package-lock.json inside the image.
+node_modules
+.next
+out
+build
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.git
+.gitignore
+.github
+
+.env
+.env*.local
+
+README.md
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+coverage
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+.vercel

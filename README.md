@@ -108,6 +108,56 @@ network requests.
 npm run seed     # regenerate lib/data/*.json (deterministic)
 ```
 
+## Self-hosting with Docker
+
+The app is stateless and the whole dataset is baked into the image, so there is
+nothing to mount and no database to run.
+
+```bash
+docker compose up -d --build
+```
+
+Then open `http://<your-nas-ip>:3000`. Health is at `/api/health`, which also
+reports which data source is live.
+
+`next.config.ts` sets `output: "standalone"`, so the image ships a server
+bundled with only the `node_modules` it actually uses — no toolchain, no dev
+dependencies. It runs as an unprivileged user and is roughly 200 MB.
+
+### Things that actually bite on a NAS
+
+- **Set `TZ`.** It is `Etc/UTC` in `docker-compose.yml`; change it to your zone.
+  The container clock decides where the "Tonight" cutoff falls and how show
+  times are printed. It matters more once the Ticketmaster provider is live,
+  because real event times are absolute instants that get rendered in the
+  container's timezone.
+- **Build on the NAS, or match its architecture.** The Dockerfile is
+  arch-agnostic and `docker compose up --build` on the NAS itself always does
+  the right thing. If you build on an x86 laptop for an ARM NAS, the image will
+  not run — use
+  `docker buildx build --platform linux/arm64 -t ugmf:latest .` instead.
+- **`next build` wants roughly 2 GB of RAM.** On a 2 GB NAS it can be killed
+  mid-build. Build the image on a machine with more memory, then
+  `docker save ugmf:latest | gzip > ugmf.tar.gz`, copy it over, and
+  `docker load < ugmf.tar.gz` — then drop the `build:` line from the compose
+  file so it uses the loaded image.
+- **Port 3000** is usually free on Synology and QNAP (DSM itself uses 5000/5001).
+  If it is taken, change the left-hand side of the port mapping, e.g.
+  `"8080:3000"`.
+
+Synology Container Manager and QNAP Container Station both read this
+`docker-compose.yml` directly — create a project pointing at the repo folder
+rather than using the CLI, if you prefer the GUI.
+
+To update after pulling new commits:
+
+```bash
+docker compose up -d --build
+```
+
+Adding real API keys later means uncommenting them in `docker-compose.yml` and
+recreating the container — no rebuild needed, since they are read at runtime.
+
 ## Commands
 
 ```bash
@@ -126,6 +176,7 @@ The same filter vocabulary as the URL bar.
 GET /api/artists?mode=crate-digger&genres=shoegaze&lat=52.52&lng=13.405&radius=25&when=next-7
 GET /api/artists/[slug]
 GET /api/events?when=weekend&lat=52.52&lng=13.405&radius=50&tier=underground
+GET /api/health
 ```
 
 ## Layout
