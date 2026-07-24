@@ -159,10 +159,40 @@ dependencies. It runs as an unprivileged user and is roughly 200 MB.
   Building on the NAS itself is also always correct. What breaks is building on
   an x86 laptop for an ARM NAS — for that use
   `docker buildx build --platform linux/arm64 -t ugmf:latest .`
-- **`next build` wants roughly 2 GB of RAM**, which is the usual reason Option B
-  fails on smaller units — the build gets killed part-way. Use Option A, or
-  build elsewhere and move the image across with
+- **Building peaks at about 1 GB of real memory**, measured rather than
+  estimated (see below). That is genuine resident usage, not headroom — so a
+  2 GB NAS already running other containers is where Option B starts getting
+  tight. Use Option A, or build elsewhere and move the image across with
   `docker save ugmf:latest | gzip > ugmf.tar.gz` and `docker load < ugmf.tar.gz`.
+
+<details>
+<summary>What the build actually costs</summary>
+
+Peak concurrent RSS across the whole process tree, sampled every 50 ms on
+x86_64 / Node 22:
+
+| Stage | Peak tree RSS | Largest single process |
+| --- | --- | --- |
+| `npm ci` (deps stage) | 983 MB | 887 MB (npm itself) |
+| `next build` (builder stage), 4 cores | 994 MB | 553 MB |
+| `next build`, 2 cores | 1035 MB | 504 MB |
+| `next build`, 1 core | 826 MB | 483 MB |
+
+The two stages run separately, so the figures do not add — the image build
+peaks around 1 GB, not 2 GB.
+
+Almost none of that is JavaScript heap you could tune away. Capping the heap
+from its 8.2 GB default down to 256 MB moved total RSS by under 1%
+(994 MB → 999 MB); the build only breaks below that, failing at 192 MB with a
+V8 out-of-memory. The bulk is native memory — Turbopack is Rust — plus the
+baseline of eight Node processes. Fewer cores does not help much either, as the
+table shows.
+
+Numbers are for this catalogue (52 artists, 52 prerendered pages). A much
+larger dataset would raise the static-generation cost. Cross-building arm64
+under QEMU in CI behaves differently again.
+
+</details>
 - **Port 3000** is usually free on Synology and QNAP (DSM itself uses 5000/5001).
   If it is taken, change the left-hand side of the port mapping, e.g.
   `"8080:3000"`.
