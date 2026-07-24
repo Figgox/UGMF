@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+/*
+ * UGMF looks like a gig flyer stapled to a lamppost: near-black, one acid
+ * accent, heavy condensed type, and obscurity tiers carrying the colour signal
+ * (the more buried the artist, the hotter the badge).
+ */
+
+@theme {
+  --color-ink: #08080a;
+  --color-surface: #121216;
+  --color-surface-2: #1a1a20;
+  --color-line: #2a2a33;
+  --color-line-bright: #3d3d4a;
+  --color-fog: #a2a2ae;
+  --color-chalk: #f4f4f6;
+
+  --color-acid: #c9ff2e;
+  --color-acid-dim: #93bd15;
+
+  --color-tier-deep: #c9ff2e;
+  --color-tier-under: #45e0d0;
+  --color-tier-rising: #ffb020;
+  --color-tier-established: #8f9bb3;
+  --color-tier-mainstream: #6b6b78;
+
+  --font-display:
+    "Helvetica Neue", "Arial Narrow", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, monospace;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-ink);
+    color: var(--color-chalk);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    /* Faint diagonal texture — photocopied-flyer grain. */
+    background-image: repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.014) 0px,
+      rgba(255, 255, 255, 0.014) 1px,
+      transparent 1px,
+      transparent 5px
+    );
+  }
+
+  ::selection {
+    background: var(--color-acid);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-acid);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .display {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    font-stretch: condensed;
+  }
+
+  .label {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-fog);
+  }
+
+  /* Horizontal filter rails scroll rather than wrap on narrow screens. */
+  .rail {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .rail::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

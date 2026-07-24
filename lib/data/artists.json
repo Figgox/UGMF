@@ -1,0 +1,2925 @@
+[
+  {
+    "id": "art_concrete-pastoral",
+    "slug": "concrete-pastoral",
+    "name": "Concrete Pastoral",
+    "bio": "Formed in Berlin in 2023, Concrete Pastoral play grim and danceable post-punk to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "post-punk",
+      "art punk"
+    ],
+    "homeCity": "Berlin",
+    "location": {
+      "lat": 52.5773,
+      "lng": 13.2646
+    },
+    "monthlyListeners": 189,
+    "followers": 24,
+    "popularity": 30,
+    "momentum": -0.1,
+    "formedYear": 2023,
+    "topTracks": [
+      {
+        "id": "trk_concrete-pastoral_1",
+        "name": "Second Language",
+        "durationMs": 117000,
+        "album": "Second Language Vol. 1"
+      },
+      {
+        "id": "trk_concrete-pastoral_2",
+        "name": "Dry Season",
+        "durationMs": 95000,
+        "album": "Second Language Vol. 1"
+      },
+      {
+        "id": "trk_concrete-pastoral_3",
+        "name": "Wet Concrete",
+        "durationMs": 268000,
+        "album": "Second Language Vol. 1"
+      },
+      {
+        "id": "trk_concrete-pastoral_4",
+        "name": "Municipal",
+        "durationMs": 175000,
+        "album": "Second Language Vol. 1"
+      },
+      {
+        "id": "trk_concrete-pastoral_5",
+        "name": "Grey Arcade",
+        "durationMs": 240000,
+        "album": "Second Language Vol. 1"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://concrete-pastoral.bandcamp.com"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_tender-machinery",
+    "slug": "tender-machinery",
+    "name": "Tender Machinery",
+    "bio": "Tender Machinery have been making taut, bass-forward post-punk out of Berlin since 2022. Self-released everything so far; you will not find them on a festival poster.",
+    "genres": [
+      "post-punk",
+      "art punk"
+    ],
+    "homeCity": "Berlin",
+    "location": {
+      "lat": 52.5861,
+      "lng": 13.3656
+    },
+    "monthlyListeners": 1630,
+    "followers": 509,
+    "popularity": 42,
+    "momentum": 19,
+    "formedYear": 2022,
+    "topTracks": [
+      {
+        "id": "trk_tender-machinery_1",
+        "name": "Dry Season",
+        "durationMs": 113000,
+        "album": "Dry Season Vol. 1"
+      },
+      {
+        "id": "trk_tender-machinery_2",
+        "name": "Grey Arcade",
+        "durationMs": 114000
+      },
+      {
+        "id": "trk_tender-machinery_3",
+        "name": "Second Language",
+        "durationMs": 295000
+      },
+      {
+        "id": "trk_tender-machinery_4",
+        "name": "Housing Estate",
+        "durationMs": 143000,
+        "album": "Dry Season Vol. 1"
+      },
+      {
+        "id": "trk_tender-machinery_5",
+        "name": "Function Room",
+        "durationMs": 106000,
+        "album": "Dry Season Vol. 1"
+      },
+      {
+        "id": "trk_tender-machinery_6",
+        "name": "Wet Concrete",
+        "durationMs": 103000,
+        "album": "Dry Season Vol. 1"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://tender-machinery.bandcamp.com",
+      "instagram": "https://instagram.com/tendermachinery",
+      "website": "https://tender-machinery.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_the-long-corridor",
+    "slug": "the-long-corridor",
+    "name": "The Long Corridor",
+    "bio": "Formed in London in 2015, The Long Corridor play grim and danceable post-punk to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "post-punk"
+    ],
+    "homeCity": "London",
+    "location": {
+      "lat": 51.546,
+      "lng": -0.1162
+    },
+    "monthlyListeners": 164000,
+    "followers": 37232,
+    "popularity": 68,
+    "momentum": 49,
+    "formedYear": 2015,
+    "topTracks": [
+      {
+        "id": "trk_the-long-corridor_1",
+        "name": "Nothing Doing",
+        "durationMs": 277000,
+        "album": "Municipal Demos"
+      },
+      {
+        "id": "trk_the-long-corridor_2",
+        "name": "Municipal",
+        "durationMs": 130000
+      },
+      {
+        "id": "trk_the-long-corridor_3",
+        "name": "Wet Concrete",
+        "durationMs": 280000
+      },
+      {
+        "id": "trk_the-long-corridor_4",
+        "name": "Housing Estate",
+        "durationMs": 371000,
+        "album": "Municipal Demos"
+      },
+      {
+        "id": "trk_the-long-corridor_5",
+        "name": "Dry Season",
+        "durationMs": 125000,
+        "album": "Municipal Demos"
+      },
+      {
+        "id": "trk_the-long-corridor_6",
+        "name": "Grey Arcade",
+        "durationMs": 180000,
+        "album": "Municipal Demos"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://the-long-corridor.bandcamp.com"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_bad-weather-club",
+    "slug": "bad-weather-club",
+    "name": "Bad Weather Club",
+    "bio": "Bad Weather Club have been making grim and danceable post-punk out of London since 2012. Self-released everything so far; you will not find them on a festival poster.",
+    "genres": [
+      "post-punk",
+      "art punk"
+    ],
+    "homeCity": "London",
+    "location": {
+      "lat": 51.5734,
+      "lng": 0.0071
+    },
+    "monthlyListeners": 5200,
+    "followers": 1337,
+    "popularity": 48,
+    "momentum": 37.7,
+    "formedYear": 2012,
+    "topTracks": [
+      {
+        "id": "trk_bad-weather-club_1",
+        "name": "Wet Concrete",
+        "durationMs": 287000,
+        "album": "Nothing Doing Demos"
+      },
+      {
+        "id": "trk_bad-weather-club_2",
+        "name": "Function Room",
+        "durationMs": 244000
+      },
+      {
+        "id": "trk_bad-weather-club_3",
+        "name": "Nothing Doing",
+        "durationMs": 377000
+      },
+      {
+        "id": "trk_bad-weather-club_4",
+        "name": "Second Language",
+        "durationMs": 101000,
+        "album": "Nothing Doing Demos"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://bad-weather-club.bandcamp.com",
+      "instagram": "https://instagram.com/badweatherclub"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_lithium-gardens",
+    "slug": "lithium-gardens",
+    "name": "Lithium Gardens",
+    "bio": "A Melbourne project running since 2012. Wiry and deadpan post-punk, recorded at home and mixed loud.",
+    "genres": [
+      "post-punk",
+      "art punk"
+    ],
+    "homeCity": "Melbourne",
+    "location": {
+      "lat": -37.8494,
+      "lng": 145.0595
+    },
+    "monthlyListeners": 33700,
+    "followers": 15783,
+    "popularity": 59,
+    "momentum": 20.6,
+    "formedYear": 2012,
+    "topTracks": [
+      {
+        "id": "trk_lithium-gardens_1",
+        "name": "Nothing Doing",
+        "durationMs": 161000,
+        "album": "Municipal Demos"
+      },
+      {
+        "id": "trk_lithium-gardens_2",
+        "name": "Housing Estate",
+        "durationMs": 258000,
+        "album": "Municipal Demos"
+      },
+      {
+        "id": "trk_lithium-gardens_3",
+        "name": "Function Room",
+        "durationMs": 237000,
+        "album": "Municipal Demos"
+      },
+      {
+        "id": "trk_lithium-gardens_4",
+        "name": "Dry Season",
+        "durationMs": 179000
+      },
+      {
+        "id": "trk_lithium-gardens_5",
+        "name": "Municipal",
+        "durationMs": 207000,
+        "album": "Municipal Demos"
+      },
+      {
+        "id": "trk_lithium-gardens_6",
+        "name": "Wet Concrete",
+        "durationMs": 188000
+      }
+    ],
+    "links": {
+      "bandcamp": "https://lithium-gardens.bandcamp.com",
+      "instagram": "https://instagram.com/lithiumgardens"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_sensible-footwear",
+    "slug": "sensible-footwear",
+    "name": "Sensible Footwear",
+    "bio": "Formed in London in 2014, Sensible Footwear play grim and danceable post-punk to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "post-punk",
+      "coldwave"
+    ],
+    "homeCity": "London",
+    "location": {
+      "lat": 51.5429,
+      "lng": -0.2134
+    },
+    "monthlyListeners": 635000,
+    "followers": 251396,
+    "popularity": 75,
+    "momentum": 22.8,
+    "formedYear": 2014,
+    "topTracks": [
+      {
+        "id": "trk_sensible-footwear_1",
+        "name": "Function Room",
+        "durationMs": 292000,
+        "album": "Dry Season LP"
+      },
+      {
+        "id": "trk_sensible-footwear_2",
+        "name": "Second Language",
+        "durationMs": 115000
+      },
+      {
+        "id": "trk_sensible-footwear_3",
+        "name": "Nothing Doing",
+        "durationMs": 289000,
+        "album": "Dry Season LP"
+      },
+      {
+        "id": "trk_sensible-footwear_4",
+        "name": "Dry Season",
+        "durationMs": 375000
+      },
+      {
+        "id": "trk_sensible-footwear_5",
+        "name": "Wet Concrete",
+        "durationMs": 287000,
+        "album": "Dry Season LP"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://sensible-footwear.bandcamp.com"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_velour-static",
+    "slug": "velour-static",
+    "name": "Velour Static",
+    "bio": "Velour Static started as a bedroom experiment in 2011 and turned into one of London's more reliable live acts. Reverb-drowned shoegaze.",
+    "genres": [
+      "shoegaze"
+    ],
+    "homeCity": "London",
+    "location": {
+      "lat": 51.4693,
+      "lng": -0.0581
+    },
+    "monthlyListeners": 2720,
+    "followers": 857,
+    "popularity": 45,
+    "momentum": 47.5,
+    "formedYear": 2011,
+    "topTracks": [
+      {
+        "id": "trk_velour-static_1",
+        "name": "Blue Hour",
+        "durationMs": 314000,
+        "album": "Tape Bleed Vol. 1"
+      },
+      {
+        "id": "trk_velour-static_2",
+        "name": "Wash",
+        "durationMs": 262000,
+        "album": "Tape Bleed Vol. 1"
+      },
+      {
+        "id": "trk_velour-static_3",
+        "name": "Softer Now",
+        "durationMs": 191000,
+        "album": "Tape Bleed Vol. 1"
+      },
+      {
+        "id": "trk_velour-static_4",
+        "name": "Tape Bleed",
+        "durationMs": 278000,
+        "album": "Tape Bleed Vol. 1"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://velour-static.bandcamp.com",
+      "instagram": "https://instagram.com/velourstatic"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_halfway-ghost",
+    "slug": "halfway-ghost",
+    "name": "Halfway Ghost",
+    "bio": "Formed in Melbourne in 2020, Halfway Ghost play reverb-drowned shoegaze to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "shoegaze",
+      "noise pop"
+    ],
+    "homeCity": "Melbourne",
+    "location": {
+      "lat": -37.733,
+      "lng": 144.9014
+    },
+    "monthlyListeners": 15200,
+    "followers": 4907,
+    "popularity": 54,
+    "momentum": 3.2,
+    "formedYear": 2020,
+    "topTracks": [
+      {
+        "id": "trk_halfway-ghost_1",
+        "name": "Softer Now",
+        "durationMs": 108000,
+        "album": "Blue Hour Tape"
+      },
+      {
+        "id": "trk_halfway-ghost_2",
+        "name": "Nineteen",
+        "durationMs": 329000,
+        "album": "Blue Hour Tape"
+      },
+      {
+        "id": "trk_halfway-ghost_3",
+        "name": "Tape Bleed",
+        "durationMs": 131000
+      },
+      {
+        "id": "trk_halfway-ghost_4",
+        "name": "Faint Praise",
+        "durationMs": 214000,
+        "album": "Blue Hour Tape"
+      },
+      {
+        "id": "trk_halfway-ghost_5",
+        "name": "Melt Into",
+        "durationMs": 336000,
+        "album": "Blue Hour Tape"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://halfway-ghost.bandcamp.com",
+      "website": "https://halfway-ghost.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_slow-bloom",
+    "slug": "slow-bloom",
+    "name": "Slow Bloom",
+    "bio": "Slow Bloom have been making reverb-drowned shoegaze out of London since 2021. Self-released everything so far; you will not find them on a festival poster.",
+    "genres": [
+      "shoegaze",
+      "noise pop"
+    ],
+    "homeCity": "London",
+    "location": {
+      "lat": 51.4812,
+      "lng": -0.133
+    },
+    "monthlyListeners": 13200,
+    "followers": 3124,
+    "popularity": 54,
+    "momentum": 47.7,
+    "formedYear": 2021,
+    "topTracks": [
+      {
+        "id": "trk_slow-bloom_1",
+        "name": "Melt Into",
+        "durationMs": 166000,
+        "album": "Wash Demos"
+      },
+      {
+        "id": "trk_slow-bloom_2",
+        "name": "Faint Praise",
+        "durationMs": 378000,
+        "album": "Wash Demos"
+      },
+      {
+        "id": "trk_slow-bloom_3",
+        "name": "Nineteen",
+        "durationMs": 144000,
+        "album": "Wash Demos"
+      },
+      {
+        "id": "trk_slow-bloom_4",
+        "name": "Sleeping Through",
+        "durationMs": 132000,
+        "album": "Wash Demos"
+      },
+      {
+        "id": "trk_slow-bloom_5",
+        "name": "Tape Bleed",
+        "durationMs": 340000,
+        "album": "Wash Demos"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://slow-bloom.bandcamp.com",
+      "instagram": "https://instagram.com/slowbloom"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_cassette-sunday",
+    "slug": "cassette-sunday",
+    "name": "Cassette Sunday",
+    "bio": "Cassette Sunday started as a bedroom experiment in 2010 and turned into one of Stockholm's more reliable live acts. Gauzy and enormous shoegaze.",
+    "genres": [
+      "shoegaze",
+      "dream pop"
+    ],
+    "homeCity": "Stockholm",
+    "location": {
+      "lat": 59.2964,
+      "lng": 18.0758
+    },
+    "monthlyListeners": 539000,
+    "followers": 155088,
+    "popularity": 74,
+    "momentum": 6.9,
+    "formedYear": 2010,
+    "topTracks": [
+      {
+        "id": "trk_cassette-sunday_1",
+        "name": "Softer Now",
+        "durationMs": 375000,
+        "album": "Softer Now LP"
+      },
+      {
+        "id": "trk_cassette-sunday_2",
+        "name": "Blue Hour",
+        "durationMs": 131000,
+        "album": "Softer Now LP"
+      },
+      {
+        "id": "trk_cassette-sunday_3",
+        "name": "Sleeping Through",
+        "durationMs": 333000,
+        "album": "Softer Now LP"
+      },
+      {
+        "id": "trk_cassette-sunday_4",
+        "name": "Faint Praise",
+        "durationMs": 199000,
+        "album": "Softer Now LP"
+      },
+      {
+        "id": "trk_cassette-sunday_5",
+        "name": "Nineteen",
+        "durationMs": 336000,
+        "album": "Softer Now LP"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://cassette-sunday.bandcamp.com",
+      "instagram": "https://instagram.com/cassettesunday"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_fathom-blue",
+    "slug": "fathom-blue",
+    "name": "Fathom Blue",
+    "bio": "Fathom Blue started as a bedroom experiment in 2011 and turned into one of London's more reliable live acts. Reverb-drowned shoegaze.",
+    "genres": [
+      "shoegaze",
+      "noise pop"
+    ],
+    "homeCity": "London",
+    "location": {
+      "lat": 51.5716,
+      "lng": -0.1372
+    },
+    "monthlyListeners": 154000,
+    "followers": 38681,
+    "popularity": 67,
+    "momentum": 29.2,
+    "formedYear": 2011,
+    "topTracks": [
+      {
+        "id": "trk_fathom-blue_1",
+        "name": "Blue Hour",
+        "durationMs": 262000,
+        "album": "Softer Now Tape"
+      },
+      {
+        "id": "trk_fathom-blue_2",
+        "name": "Nineteen",
+        "durationMs": 235000,
+        "album": "Softer Now Tape"
+      },
+      {
+        "id": "trk_fathom-blue_3",
+        "name": "Sleeping Through",
+        "durationMs": 186000,
+        "album": "Softer Now Tape"
+      },
+      {
+        "id": "trk_fathom-blue_4",
+        "name": "Tape Bleed",
+        "durationMs": 312000,
+        "album": "Softer Now Tape"
+      },
+      {
+        "id": "trk_fathom-blue_5",
+        "name": "Softer Now",
+        "durationMs": 292000,
+        "album": "Softer Now Tape"
+      },
+      {
+        "id": "trk_fathom-blue_6",
+        "name": "Wash",
+        "durationMs": 220000,
+        "album": "Softer Now Tape"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://fathom-blue.bandcamp.com",
+      "instagram": "https://instagram.com/fathomblue"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_peach-static",
+    "slug": "peach-static",
+    "name": "Peach Static",
+    "bio": "Peach Static started as a bedroom experiment in 2018 and turned into one of Los Angeles's more reliable live acts. All pedals, no ego shoegaze.",
+    "genres": [
+      "shoegaze"
+    ],
+    "homeCity": "Los Angeles",
+    "location": {
+      "lat": 34.0726,
+      "lng": -118.2875
+    },
+    "monthlyListeners": 17100,
+    "followers": 3504,
+    "popularity": 55,
+    "momentum": -1.3,
+    "formedYear": 2018,
+    "topTracks": [
+      {
+        "id": "trk_peach-static_1",
+        "name": "Nineteen",
+        "durationMs": 361000
+      },
+      {
+        "id": "trk_peach-static_2",
+        "name": "Melt Into",
+        "durationMs": 214000,
+        "album": "Wash Vol. 1"
+      },
+      {
+        "id": "trk_peach-static_3",
+        "name": "Blue Hour",
+        "durationMs": 156000,
+        "album": "Wash Vol. 1"
+      },
+      {
+        "id": "trk_peach-static_4",
+        "name": "Faint Praise",
+        "durationMs": 140000
+      }
+    ],
+    "links": {
+      "bandcamp": "https://peach-static.bandcamp.com"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_nils-kvarnstrom",
+    "slug": "nils-kvarnstrom",
+    "name": "Nils Kvarnström",
+    "bio": "Nils Kvarnström started as a bedroom experiment in 2018 and turned into one of Melbourne's more reliable live acts. Long-form and patient ambient.",
+    "genres": [
+      "ambient"
+    ],
+    "homeCity": "Melbourne",
+    "location": {
+      "lat": -37.7717,
+      "lng": 145.0375
+    },
+    "monthlyListeners": 44200,
+    "followers": 8496,
+    "popularity": 60,
+    "momentum": 9.2,
+    "formedYear": 2018,
+    "topTracks": [
+      {
+        "id": "trk_nils-kvarnstrom_1",
+        "name": "Distance Study",
+        "durationMs": 186000,
+        "album": "Two Rooms Demos"
+      },
+      {
+        "id": "trk_nils-kvarnstrom_2",
+        "name": "Two Rooms",
+        "durationMs": 327000
+      },
+      {
+        "id": "trk_nils-kvarnstrom_3",
+        "name": "Standing Water",
+        "durationMs": 373000,
+        "album": "Two Rooms Demos"
+      },
+      {
+        "id": "trk_nils-kvarnstrom_4",
+        "name": "Fog Signal",
+        "durationMs": 367000,
+        "album": "Two Rooms Demos"
+      },
+      {
+        "id": "trk_nils-kvarnstrom_5",
+        "name": "Kelp",
+        "durationMs": 305000
+      }
+    ],
+    "links": {
+      "bandcamp": "https://nils-kvarnstrom.bandcamp.com",
+      "website": "https://nils-kvarnstrom.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_room-tone",
+    "slug": "room-tone",
+    "name": "Room Tone",
+    "bio": "Room Tone have been making long-form and patient ambient out of Los Angeles since 2015. Self-released everything so far; you will not find them on a festival poster.",
+    "genres": [
+      "ambient",
+      "drone"
+    ],
+    "homeCity": "Los Angeles",
+    "location": {
+      "lat": 34.1333,
+      "lng": -118.2125
+    },
+    "monthlyListeners": 9870,
+    "followers": 3615,
+    "popularity": 52,
+    "momentum": 6.1,
+    "formedYear": 2015,
+    "topTracks": [
+      {
+        "id": "trk_room-tone_1",
+        "name": "Fog Signal",
+        "durationMs": 335000,
+        "album": "Thaw Singles"
+      },
+      {
+        "id": "trk_room-tone_2",
+        "name": "Standing Water",
+        "durationMs": 291000,
+        "album": "Thaw Singles"
+      },
+      {
+        "id": "trk_room-tone_3",
+        "name": "Kelp",
+        "durationMs": 118000,
+        "album": "Thaw Singles"
+      },
+      {
+        "id": "trk_room-tone_4",
+        "name": "Two Rooms",
+        "durationMs": 205000,
+        "album": "Thaw Singles"
+      },
+      {
+        "id": "trk_room-tone_5",
+        "name": "Field, Empty",
+        "durationMs": 369000,
+        "album": "Thaw Singles"
+      },
+      {
+        "id": "trk_room-tone_6",
+        "name": "Distance Study",
+        "durationMs": 170000,
+        "album": "Thaw Singles"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://room-tone.bandcamp.com"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_aurelia-fen",
+    "slug": "aurelia-fen",
+    "name": "Aurelia Fen",
+    "bio": "Aurelia Fen have been making long-form and patient ambient out of Los Angeles since 2019. Self-released everything so far; you will not find them on a festival poster.",
+    "genres": [
+      "ambient",
+      "modular"
+    ],
+    "homeCity": "Los Angeles",
+    "location": {
+      "lat": 34.0635,
+      "lng": -118.3261
+    },
+    "monthlyListeners": 2900,
+    "followers": 891,
+    "popularity": 45,
+    "momentum": -4.7,
+    "formedYear": 2019,
+    "topTracks": [
+      {
+        "id": "trk_aurelia-fen_1",
+        "name": "Slow Tide",
+        "durationMs": 317000,
+        "album": "Two Rooms Demos"
+      },
+      {
+        "id": "trk_aurelia-fen_2",
+        "name": "Distance Study",
+        "durationMs": 121000,
+        "album": "Two Rooms Demos"
+      },
+      {
+        "id": "trk_aurelia-fen_3",
+        "name": "Kelp",
+        "durationMs": 154000,
+        "album": "Two Rooms Demos"
+      },
+      {
+        "id": "trk_aurelia-fen_4",
+        "name": "Fog Signal",
+        "durationMs": 233000,
+        "album": "Two Rooms Demos"
+      },
+      {
+        "id": "trk_aurelia-fen_5",
+        "name": "Two Rooms",
+        "durationMs": 374000,
+        "album": "Two Rooms Demos"
+      },
+      {
+        "id": "trk_aurelia-fen_6",
+        "name": "Field, Empty",
+        "durationMs": 355000,
+        "album": "Two Rooms Demos"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://aurelia-fen.bandcamp.com",
+      "instagram": "https://instagram.com/aureliafen",
+      "website": "https://aurelia-fen.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_pale-instrument",
+    "slug": "pale-instrument",
+    "name": "Pale Instrument",
+    "bio": "Formed in New York in 2012, Pale Instrument play tape-saturated ambient to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "ambient"
+    ],
+    "homeCity": "New York",
+    "location": {
+      "lat": 40.7885,
+      "lng": -74.0578
+    },
+    "monthlyListeners": 4940,
+    "followers": 2196,
+    "popularity": 48,
+    "momentum": 34.5,
+    "formedYear": 2012,
+    "topTracks": [
+      {
+        "id": "trk_pale-instrument_1",
+        "name": "Field, Empty",
+        "durationMs": 300000,
+        "album": "Fog Signal Singles"
+      },
+      {
+        "id": "trk_pale-instrument_2",
+        "name": "Two Rooms",
+        "durationMs": 108000,
+        "album": "Fog Signal Singles"
+      },
+      {
+        "id": "trk_pale-instrument_3",
+        "name": "Distance Study",
+        "durationMs": 181000,
+        "album": "Fog Signal Singles"
+      },
+      {
+        "id": "trk_pale-instrument_4",
+        "name": "Standing Water",
+        "durationMs": 129000,
+        "album": "Fog Signal Singles"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://pale-instrument.bandcamp.com",
+      "instagram": "https://instagram.com/paleinstrument"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_winter-frequency",
+    "slug": "winter-frequency",
+    "name": "Winter Frequency",
+    "bio": "A Los Angeles project running since 2010. Tape-saturated ambient, recorded at home and mixed loud.",
+    "genres": [
+      "ambient"
+    ],
+    "homeCity": "Los Angeles",
+    "location": {
+      "lat": 34.0673,
+      "lng": -118.35
+    },
+    "monthlyListeners": 520,
+    "followers": 113,
+    "popularity": 35,
+    "momentum": 39,
+    "formedYear": 2010,
+    "topTracks": [
+      {
+        "id": "trk_winter-frequency_1",
+        "name": "Standing Water",
+        "durationMs": 122000,
+        "album": "Distance Study Sessions"
+      },
+      {
+        "id": "trk_winter-frequency_2",
+        "name": "Field, Empty",
+        "durationMs": 261000,
+        "album": "Distance Study Sessions"
+      },
+      {
+        "id": "trk_winter-frequency_3",
+        "name": "Two Rooms",
+        "durationMs": 250000,
+        "album": "Distance Study Sessions"
+      },
+      {
+        "id": "trk_winter-frequency_4",
+        "name": "Kelp",
+        "durationMs": 293000,
+        "album": "Distance Study Sessions"
+      },
+      {
+        "id": "trk_winter-frequency_5",
+        "name": "Slow Tide",
+        "durationMs": 191000,
+        "album": "Distance Study Sessions"
+      },
+      {
+        "id": "trk_winter-frequency_6",
+        "name": "Distance Study",
+        "durationMs": 317000,
+        "album": "Distance Study Sessions"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://winter-frequency.bandcamp.com",
+      "instagram": "https://instagram.com/winterfrequency"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_dj-mould",
+    "slug": "dj-mould",
+    "name": "DJ Mould",
+    "bio": "DJ Mould started as a bedroom experiment in 2012 and turned into one of Melbourne's more reliable live acts. Rolling and hypnotic jungle.",
+    "genres": [
+      "jungle"
+    ],
+    "homeCity": "Melbourne",
+    "location": {
+      "lat": -37.8142,
+      "lng": 144.885
+    },
+    "monthlyListeners": 248000,
+    "followers": 71335,
+    "popularity": 70,
+    "momentum": 37.9,
+    "formedYear": 2012,
+    "topTracks": [
+      {
+        "id": "trk_dj-mould_1",
+        "name": "Pirate Signal",
+        "durationMs": 100000,
+        "album": "Night Bus VIP LP"
+      },
+      {
+        "id": "trk_dj-mould_2",
+        "name": "Amen Corner",
+        "durationMs": 151000,
+        "album": "Night Bus VIP LP"
+      },
+      {
+        "id": "trk_dj-mould_3",
+        "name": "Steppers",
+        "durationMs": 274000,
+        "album": "Night Bus VIP LP"
+      },
+      {
+        "id": "trk_dj-mould_4",
+        "name": "Ratio",
+        "durationMs": 124000
+      },
+      {
+        "id": "trk_dj-mould_5",
+        "name": "Low End Theory",
+        "durationMs": 302000,
+        "album": "Night Bus VIP LP"
+      },
+      {
+        "id": "trk_dj-mould_6",
+        "name": "Night Bus VIP",
+        "durationMs": 291000,
+        "album": "Night Bus VIP LP"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://dj-mould.bandcamp.com",
+      "instagram": "https://instagram.com/djmould",
+      "website": "https://dj-mould.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_sub-rosa-sound",
+    "slug": "sub-rosa-sound",
+    "name": "Sub Rosa Sound",
+    "bio": "Formed in London in 2019, Sub Rosa Sound play pure basement energy jungle to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "jungle",
+      "breakbeat"
+    ],
+    "homeCity": "London",
+    "location": {
+      "lat": 51.5157,
+      "lng": -0.0488
+    },
+    "monthlyListeners": 97800,
+    "followers": 26754,
+    "popularity": 65,
+    "momentum": 8.3,
+    "formedYear": 2019,
+    "topTracks": [
+      {
+        "id": "trk_sub-rosa-sound_1",
+        "name": "Steppers",
+        "durationMs": 146000,
+        "album": "Low End Theory Sessions"
+      },
+      {
+        "id": "trk_sub-rosa-sound_2",
+        "name": "Low End Theory",
+        "durationMs": 169000,
+        "album": "Low End Theory Sessions"
+      },
+      {
+        "id": "trk_sub-rosa-sound_3",
+        "name": "Pirate Signal",
+        "durationMs": 131000,
+        "album": "Low End Theory Sessions"
+      },
+      {
+        "id": "trk_sub-rosa-sound_4",
+        "name": "Ratio",
+        "durationMs": 262000,
+        "album": "Low End Theory Sessions"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://sub-rosa-sound.bandcamp.com",
+      "instagram": "https://instagram.com/subrosasound"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_breakwater",
+    "slug": "breakwater",
+    "name": "Breakwater",
+    "bio": "Formed in New York in 2011, Breakwater play rolling and hypnotic jungle to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "jungle",
+      "breakbeat"
+    ],
+    "homeCity": "New York",
+    "location": {
+      "lat": 40.6236,
+      "lng": -73.9489
+    },
+    "monthlyListeners": 360000,
+    "followers": 162915,
+    "popularity": 72,
+    "momentum": 15.4,
+    "formedYear": 2011,
+    "topTracks": [
+      {
+        "id": "trk_breakwater_1",
+        "name": "Night Bus VIP",
+        "durationMs": 344000,
+        "album": "Night Bus VIP EP"
+      },
+      {
+        "id": "trk_breakwater_2",
+        "name": "Low End Theory",
+        "durationMs": 127000
+      },
+      {
+        "id": "trk_breakwater_3",
+        "name": "Steppers",
+        "durationMs": 216000
+      },
+      {
+        "id": "trk_breakwater_4",
+        "name": "Ratio",
+        "durationMs": 299000
+      },
+      {
+        "id": "trk_breakwater_5",
+        "name": "Amen Corner",
+        "durationMs": 342000,
+        "album": "Night Bus VIP EP"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://breakwater.bandcamp.com",
+      "instagram": "https://instagram.com/breakwater",
+      "website": "https://breakwater.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_nite-bus",
+    "slug": "nite-bus",
+    "name": "Nite Bus",
+    "bio": "A Los Angeles project running since 2022. Pure basement energy jungle, recorded at home and mixed loud.",
+    "genres": [
+      "jungle",
+      "footwork"
+    ],
+    "homeCity": "Los Angeles",
+    "location": {
+      "lat": 34.0215,
+      "lng": -118.3211
+    },
+    "monthlyListeners": 245000,
+    "followers": 63239,
+    "popularity": 70,
+    "momentum": 36.4,
+    "formedYear": 2022,
+    "topTracks": [
+      {
+        "id": "trk_nite-bus_1",
+        "name": "Tempo Test",
+        "durationMs": 100000,
+        "album": "Pirate Signal EP"
+      },
+      {
+        "id": "trk_nite-bus_2",
+        "name": "Steppers",
+        "durationMs": 100000
+      },
+      {
+        "id": "trk_nite-bus_3",
+        "name": "Dubplate",
+        "durationMs": 253000,
+        "album": "Pirate Signal EP"
+      },
+      {
+        "id": "trk_nite-bus_4",
+        "name": "Low End Theory",
+        "durationMs": 148000
+      },
+      {
+        "id": "trk_nite-bus_5",
+        "name": "Pirate Signal",
+        "durationMs": 148000,
+        "album": "Pirate Signal EP"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://nite-bus.bandcamp.com",
+      "instagram": "https://instagram.com/nitebus"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_cutty-ranks-appreciation-society",
+    "slug": "cutty-ranks-appreciation-society",
+    "name": "Cutty Ranks Appreciation Society",
+    "bio": "A London project running since 2010. Pure basement energy jungle, recorded at home and mixed loud.",
+    "genres": [
+      "jungle",
+      "breakbeat"
+    ],
+    "homeCity": "London",
+    "location": {
+      "lat": 51.435,
+      "lng": -0.1219
+    },
+    "monthlyListeners": 1060000,
+    "followers": 411244,
+    "popularity": 78,
+    "momentum": 48.5,
+    "formedYear": 2010,
+    "topTracks": [
+      {
+        "id": "trk_cutty-ranks-appreciation-society_1",
+        "name": "Ratio",
+        "durationMs": 166000
+      },
+      {
+        "id": "trk_cutty-ranks-appreciation-society_2",
+        "name": "Low End Theory",
+        "durationMs": 354000,
+        "album": "Ratio Demos"
+      },
+      {
+        "id": "trk_cutty-ranks-appreciation-society_3",
+        "name": "Amen Corner",
+        "durationMs": 301000,
+        "album": "Ratio Demos"
+      },
+      {
+        "id": "trk_cutty-ranks-appreciation-society_4",
+        "name": "Dubplate",
+        "durationMs": 137000
+      }
+    ],
+    "links": {
+      "bandcamp": "https://cutty-ranks-appreciation-society.bandcamp.com",
+      "instagram": "https://instagram.com/cuttyranksappreciationsociety"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_household-fire",
+    "slug": "household-fire",
+    "name": "Household Fire",
+    "bio": "A Berlin project running since 2014. Abrasive and precise noise rock, recorded at home and mixed loud.",
+    "genres": [
+      "noise rock"
+    ],
+    "homeCity": "Berlin",
+    "location": {
+      "lat": 52.5264,
+      "lng": 13.2616
+    },
+    "monthlyListeners": 19300,
+    "followers": 7285,
+    "popularity": 56,
+    "momentum": 2.8,
+    "formedYear": 2014,
+    "topTracks": [
+      {
+        "id": "trk_household-fire_1",
+        "name": "Off Cut",
+        "durationMs": 232000,
+        "album": "Dry Heave Demos"
+      },
+      {
+        "id": "trk_household-fire_2",
+        "name": "Kiln",
+        "durationMs": 288000,
+        "album": "Dry Heave Demos"
+      },
+      {
+        "id": "trk_household-fire_3",
+        "name": "Compressor",
+        "durationMs": 310000,
+        "album": "Dry Heave Demos"
+      },
+      {
+        "id": "trk_household-fire_4",
+        "name": "Load Bearing",
+        "durationMs": 181000,
+        "album": "Dry Heave Demos"
+      },
+      {
+        "id": "trk_household-fire_5",
+        "name": "Structural",
+        "durationMs": 98000,
+        "album": "Dry Heave Demos"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://household-fire.bandcamp.com",
+      "instagram": "https://instagram.com/householdfire",
+      "website": "https://household-fire.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_angular-momentum",
+    "slug": "angular-momentum",
+    "name": "Angular Momentum",
+    "bio": "Angular Momentum have been making abrasive and precise noise rock out of Stockholm since 2018. Self-released everything so far; you will not find them on a festival poster.",
+    "genres": [
+      "noise rock"
+    ],
+    "homeCity": "Stockholm",
+    "location": {
+      "lat": 59.3084,
+      "lng": 17.9434
+    },
+    "monthlyListeners": 66800,
+    "followers": 24008,
+    "popularity": 63,
+    "momentum": 40.7,
+    "formedYear": 2018,
+    "topTracks": [
+      {
+        "id": "trk_angular-momentum_1",
+        "name": "Bad Geometry",
+        "durationMs": 335000,
+        "album": "Bad Geometry Tape"
+      },
+      {
+        "id": "trk_angular-momentum_2",
+        "name": "Dry Heave",
+        "durationMs": 345000,
+        "album": "Bad Geometry Tape"
+      },
+      {
+        "id": "trk_angular-momentum_3",
+        "name": "Compressor",
+        "durationMs": 248000,
+        "album": "Bad Geometry Tape"
+      },
+      {
+        "id": "trk_angular-momentum_4",
+        "name": "Off Cut",
+        "durationMs": 363000,
+        "album": "Bad Geometry Tape"
+      },
+      {
+        "id": "trk_angular-momentum_5",
+        "name": "Structural",
+        "durationMs": 121000,
+        "album": "Bad Geometry Tape"
+      },
+      {
+        "id": "trk_angular-momentum_6",
+        "name": "Torsion",
+        "durationMs": 257000,
+        "album": "Bad Geometry Tape"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://angular-momentum.bandcamp.com",
+      "website": "https://angular-momentum.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_wet-cement",
+    "slug": "wet-cement",
+    "name": "Wet Cement",
+    "bio": "A Melbourne project running since 2009. Loud in a thoughtful way noise rock, recorded at home and mixed loud.",
+    "genres": [
+      "noise rock"
+    ],
+    "homeCity": "Melbourne",
+    "location": {
+      "lat": -37.7999,
+      "lng": 145.0216
+    },
+    "monthlyListeners": 3880,
+    "followers": 1756,
+    "popularity": 47,
+    "momentum": 46.1,
+    "formedYear": 2009,
+    "topTracks": [
+      {
+        "id": "trk_wet-cement_1",
+        "name": "Dry Heave",
+        "durationMs": 273000,
+        "album": "Off Cut Sessions"
+      },
+      {
+        "id": "trk_wet-cement_2",
+        "name": "Bad Geometry",
+        "durationMs": 330000
+      },
+      {
+        "id": "trk_wet-cement_3",
+        "name": "Off Cut",
+        "durationMs": 103000,
+        "album": "Off Cut Sessions"
+      },
+      {
+        "id": "trk_wet-cement_4",
+        "name": "Compressor",
+        "durationMs": 360000,
+        "album": "Off Cut Sessions"
+      },
+      {
+        "id": "trk_wet-cement_5",
+        "name": "Structural",
+        "durationMs": 216000,
+        "album": "Off Cut Sessions"
+      },
+      {
+        "id": "trk_wet-cement_6",
+        "name": "Torsion",
+        "durationMs": 251000,
+        "album": "Off Cut Sessions"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://wet-cement.bandcamp.com",
+      "instagram": "https://instagram.com/wetcement"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_the-rendering",
+    "slug": "the-rendering",
+    "name": "The Rendering",
+    "bio": "The Rendering started as a bedroom experiment in 2014 and turned into one of Stockholm's more reliable live acts. Abrasive and precise noise rock.",
+    "genres": [
+      "noise rock",
+      "sludge"
+    ],
+    "homeCity": "Stockholm",
+    "location": {
+      "lat": 59.32,
+      "lng": 18.1822
+    },
+    "monthlyListeners": 20800,
+    "followers": 6406,
+    "popularity": 56,
+    "momentum": 40.5,
+    "formedYear": 2014,
+    "topTracks": [
+      {
+        "id": "trk_the-rendering_1",
+        "name": "Kiln",
+        "durationMs": 193000,
+        "album": "Compressor Singles"
+      },
+      {
+        "id": "trk_the-rendering_2",
+        "name": "Bad Geometry",
+        "durationMs": 253000,
+        "album": "Compressor Singles"
+      },
+      {
+        "id": "trk_the-rendering_3",
+        "name": "Off Cut",
+        "durationMs": 271000,
+        "album": "Compressor Singles"
+      },
+      {
+        "id": "trk_the-rendering_4",
+        "name": "Dry Heave",
+        "durationMs": 380000
+      },
+      {
+        "id": "trk_the-rendering_5",
+        "name": "Torsion",
+        "durationMs": 376000,
+        "album": "Compressor Singles"
+      },
+      {
+        "id": "trk_the-rendering_6",
+        "name": "Compressor",
+        "durationMs": 181000,
+        "album": "Compressor Singles"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://the-rendering.bandcamp.com",
+      "instagram": "https://instagram.com/therendering"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_split-shift",
+    "slug": "split-shift",
+    "name": "Split Shift",
+    "bio": "Split Shift have been making riffs like falling scaffolding noise rock out of New York since 2009. Self-released everything so far; you will not find them on a festival poster.",
+    "genres": [
+      "noise rock"
+    ],
+    "homeCity": "New York",
+    "location": {
+      "lat": 40.8018,
+      "lng": -73.9905
+    },
+    "monthlyListeners": 174,
+    "followers": 75,
+    "popularity": 29,
+    "momentum": 23.4,
+    "formedYear": 2009,
+    "topTracks": [
+      {
+        "id": "trk_split-shift_1",
+        "name": "Load Bearing",
+        "durationMs": 200000,
+        "album": "Off Cut Demos"
+      },
+      {
+        "id": "trk_split-shift_2",
+        "name": "Structural",
+        "durationMs": 123000
+      },
+      {
+        "id": "trk_split-shift_3",
+        "name": "Bad Geometry",
+        "durationMs": 243000,
+        "album": "Off Cut Demos"
+      },
+      {
+        "id": "trk_split-shift_4",
+        "name": "Kiln",
+        "durationMs": 173000,
+        "album": "Off Cut Demos"
+      },
+      {
+        "id": "trk_split-shift_5",
+        "name": "Off Cut",
+        "durationMs": 354000
+      }
+    ],
+    "links": {
+      "bandcamp": "https://split-shift.bandcamp.com",
+      "instagram": "https://instagram.com/splitshift",
+      "website": "https://split-shift.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_verkstad",
+    "slug": "verkstad",
+    "name": "Verkstad",
+    "bio": "Verkstad started as a bedroom experiment in 2019 and turned into one of Berlin's more reliable live acts. Stripped-back and functional techno.",
+    "genres": [
+      "techno",
+      "electro"
+    ],
+    "homeCity": "Berlin",
+    "location": {
+      "lat": 52.4881,
+      "lng": 13.4842
+    },
+    "monthlyListeners": 16500,
+    "followers": 6034,
+    "popularity": 55,
+    "momentum": 26.8,
+    "formedYear": 2019,
+    "topTracks": [
+      {
+        "id": "trk_verkstad_1",
+        "name": "Iron Filing",
+        "durationMs": 189000,
+        "album": "Substation Sessions"
+      },
+      {
+        "id": "trk_verkstad_2",
+        "name": "Loop 4",
+        "durationMs": 370000,
+        "album": "Substation Sessions"
+      },
+      {
+        "id": "trk_verkstad_3",
+        "name": "Kick Study",
+        "durationMs": 293000,
+        "album": "Substation Sessions"
+      },
+      {
+        "id": "trk_verkstad_4",
+        "name": "Cold Start",
+        "durationMs": 233000,
+        "album": "Substation Sessions"
+      },
+      {
+        "id": "trk_verkstad_5",
+        "name": "Substation",
+        "durationMs": 321000
+      }
+    ],
+    "links": {
+      "bandcamp": "https://verkstad.bandcamp.com",
+      "instagram": "https://instagram.com/verkstad",
+      "website": "https://verkstad.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_null-object",
+    "slug": "null-object",
+    "name": "Null Object",
+    "bio": "Null Object have been making stripped-back and functional techno out of Stockholm since 2019. Self-released everything so far; you will not find them on a festival poster.",
+    "genres": [
+      "techno",
+      "industrial"
+    ],
+    "homeCity": "Stockholm",
+    "location": {
+      "lat": 59.2977,
+      "lng": 18.1106
+    },
+    "monthlyListeners": 2990,
+    "followers": 1357,
+    "popularity": 45,
+    "momentum": 32.1,
+    "formedYear": 2019,
+    "topTracks": [
+      {
+        "id": "trk_null-object_1",
+        "name": "Cold Start",
+        "durationMs": 295000,
+        "album": "Kick Study Vol. 1"
+      },
+      {
+        "id": "trk_null-object_2",
+        "name": "Loop 4",
+        "durationMs": 310000,
+        "album": "Kick Study Vol. 1"
+      },
+      {
+        "id": "trk_null-object_3",
+        "name": "Night Freight",
+        "durationMs": 374000,
+        "album": "Kick Study Vol. 1"
+      },
+      {
+        "id": "trk_null-object_4",
+        "name": "Third Shift",
+        "durationMs": 283000,
+        "album": "Kick Study Vol. 1"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://null-object.bandcamp.com"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_hard-light",
+    "slug": "hard-light",
+    "name": "Hard Light",
+    "bio": "Formed in London in 2013, Hard Light play raw hardware jams techno to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "techno"
+    ],
+    "homeCity": "London",
+    "location": {
+      "lat": 51.5092,
+      "lng": -0.0412
+    },
+    "monthlyListeners": 210000,
+    "followers": 82983,
+    "popularity": 69,
+    "momentum": 51,
+    "formedYear": 2013,
+    "topTracks": [
+      {
+        "id": "trk_hard-light_1",
+        "name": "Loop 4",
+        "durationMs": 246000
+      },
+      {
+        "id": "trk_hard-light_2",
+        "name": "Kick Study",
+        "durationMs": 115000,
+        "album": "Cold Start Sessions"
+      },
+      {
+        "id": "trk_hard-light_3",
+        "name": "Cold Start",
+        "durationMs": 314000,
+        "album": "Cold Start Sessions"
+      },
+      {
+        "id": "trk_hard-light_4",
+        "name": "Third Shift",
+        "durationMs": 290000,
+        "album": "Cold Start Sessions"
+      },
+      {
+        "id": "trk_hard-light_5",
+        "name": "Night Freight",
+        "durationMs": 264000,
+        "album": "Cold Start Sessions"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://hard-light.bandcamp.com",
+      "instagram": "https://instagram.com/hardlight"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_anna-back",
+    "slug": "anna-back",
+    "name": "Anna Bäck",
+    "bio": "Formed in Melbourne in 2012, Anna Bäck play stripped-back and functional techno to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "techno",
+      "electro"
+    ],
+    "homeCity": "Melbourne",
+    "location": {
+      "lat": -37.8252,
+      "lng": 145.0099
+    },
+    "monthlyListeners": 4880,
+    "followers": 1222,
+    "popularity": 48,
+    "momentum": 45.8,
+    "formedYear": 2012,
+    "topTracks": [
+      {
+        "id": "trk_anna-back_1",
+        "name": "Third Shift",
+        "durationMs": 297000,
+        "album": "Iron Filing Demos"
+      },
+      {
+        "id": "trk_anna-back_2",
+        "name": "Loop 4",
+        "durationMs": 338000,
+        "album": "Iron Filing Demos"
+      },
+      {
+        "id": "trk_anna-back_3",
+        "name": "Iron Filing",
+        "durationMs": 103000,
+        "album": "Iron Filing Demos"
+      },
+      {
+        "id": "trk_anna-back_4",
+        "name": "Rebar",
+        "durationMs": 184000,
+        "album": "Iron Filing Demos"
+      },
+      {
+        "id": "trk_anna-back_5",
+        "name": "Night Freight",
+        "durationMs": 216000,
+        "album": "Iron Filing Demos"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://anna-back.bandcamp.com",
+      "website": "https://anna-back.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_terminal-function",
+    "slug": "terminal-function",
+    "name": "Terminal Function",
+    "bio": "Terminal Function started as a bedroom experiment in 2018 and turned into one of Stockholm's more reliable live acts. Raw hardware jams techno.",
+    "genres": [
+      "techno",
+      "industrial"
+    ],
+    "homeCity": "Stockholm",
+    "location": {
+      "lat": 59.296,
+      "lng": 18.0355
+    },
+    "monthlyListeners": 4090,
+    "followers": 1580,
+    "popularity": 47,
+    "momentum": 0.7,
+    "formedYear": 2018,
+    "topTracks": [
+      {
+        "id": "trk_terminal-function_1",
+        "name": "Night Freight",
+        "durationMs": 193000,
+        "album": "Iron Filing Vol. 1"
+      },
+      {
+        "id": "trk_terminal-function_2",
+        "name": "Substation",
+        "durationMs": 109000,
+        "album": "Iron Filing Vol. 1"
+      },
+      {
+        "id": "trk_terminal-function_3",
+        "name": "Rebar",
+        "durationMs": 375000,
+        "album": "Iron Filing Vol. 1"
+      },
+      {
+        "id": "trk_terminal-function_4",
+        "name": "Cold Start",
+        "durationMs": 146000
+      },
+      {
+        "id": "trk_terminal-function_5",
+        "name": "Third Shift",
+        "durationMs": 106000,
+        "album": "Iron Filing Vol. 1"
+      },
+      {
+        "id": "trk_terminal-function_6",
+        "name": "Iron Filing",
+        "durationMs": 170000,
+        "album": "Iron Filing Vol. 1"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://terminal-function.bandcamp.com",
+      "instagram": "https://instagram.com/terminalfunction"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_marisol-grove",
+    "slug": "marisol-grove",
+    "name": "Marisol Grove",
+    "bio": "Marisol Grove have been making close-mic'd and bare folk out of New York since 2015. Self-released everything so far; you will not find them on a festival poster.",
+    "genres": [
+      "folk"
+    ],
+    "homeCity": "New York",
+    "location": {
+      "lat": 40.8017,
+      "lng": -73.9083
+    },
+    "monthlyListeners": 2360,
+    "followers": 1039,
+    "popularity": 44,
+    "momentum": 21.1,
+    "formedYear": 2015,
+    "topTracks": [
+      {
+        "id": "trk_marisol-grove_1",
+        "name": "Homing",
+        "durationMs": 266000,
+        "album": "Bramble LP"
+      },
+      {
+        "id": "trk_marisol-grove_2",
+        "name": "Ash and Ash",
+        "durationMs": 119000,
+        "album": "Bramble LP"
+      },
+      {
+        "id": "trk_marisol-grove_3",
+        "name": "Ferry Song",
+        "durationMs": 121000,
+        "album": "Bramble LP"
+      },
+      {
+        "id": "trk_marisol-grove_4",
+        "name": "Salt Marsh",
+        "durationMs": 238000,
+        "album": "Bramble LP"
+      },
+      {
+        "id": "trk_marisol-grove_5",
+        "name": "Long Way Round",
+        "durationMs": 101000,
+        "album": "Bramble LP"
+      },
+      {
+        "id": "trk_marisol-grove_6",
+        "name": "Winter Wheat",
+        "durationMs": 99000,
+        "album": "Bramble LP"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://marisol-grove.bandcamp.com",
+      "instagram": "https://instagram.com/marisolgrove",
+      "website": "https://marisol-grove.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_the-quiet-trades",
+    "slug": "the-quiet-trades",
+    "name": "The Quiet Trades",
+    "bio": "The Quiet Trades have been making close-mic'd and bare folk out of Los Angeles since 2023. Self-released everything so far; you will not find them on a festival poster.",
+    "genres": [
+      "folk",
+      "americana"
+    ],
+    "homeCity": "Los Angeles",
+    "location": {
+      "lat": 34.0996,
+      "lng": -118.3496
+    },
+    "monthlyListeners": 1530,
+    "followers": 703,
+    "popularity": 41,
+    "momentum": 13.4,
+    "formedYear": 2023,
+    "topTracks": [
+      {
+        "id": "trk_the-quiet-trades_1",
+        "name": "Little Hours",
+        "durationMs": 226000,
+        "album": "Ferry Song Demos"
+      },
+      {
+        "id": "trk_the-quiet-trades_2",
+        "name": "Bramble",
+        "durationMs": 337000,
+        "album": "Ferry Song Demos"
+      },
+      {
+        "id": "trk_the-quiet-trades_3",
+        "name": "Ash and Ash",
+        "durationMs": 223000,
+        "album": "Ferry Song Demos"
+      },
+      {
+        "id": "trk_the-quiet-trades_4",
+        "name": "Salt Marsh",
+        "durationMs": 135000,
+        "album": "Ferry Song Demos"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://the-quiet-trades.bandcamp.com",
+      "instagram": "https://instagram.com/thequiettrades",
+      "website": "https://the-quiet-trades.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_hollow-bone",
+    "slug": "hollow-bone",
+    "name": "Hollow Bone",
+    "bio": "A Berlin project running since 2014. Close-mic'd and bare folk, recorded at home and mixed loud.",
+    "genres": [
+      "folk",
+      "americana"
+    ],
+    "homeCity": "Berlin",
+    "location": {
+      "lat": 52.4665,
+      "lng": 13.3371
+    },
+    "monthlyListeners": 300,
+    "followers": 36,
+    "popularity": 32,
+    "momentum": 42.5,
+    "formedYear": 2014,
+    "topTracks": [
+      {
+        "id": "trk_hollow-bone_1",
+        "name": "Little Hours",
+        "durationMs": 258000,
+        "album": "Ferry Song Sessions"
+      },
+      {
+        "id": "trk_hollow-bone_2",
+        "name": "Ferry Song",
+        "durationMs": 373000,
+        "album": "Ferry Song Sessions"
+      },
+      {
+        "id": "trk_hollow-bone_3",
+        "name": "Ash and Ash",
+        "durationMs": 164000,
+        "album": "Ferry Song Sessions"
+      },
+      {
+        "id": "trk_hollow-bone_4",
+        "name": "Long Way Round",
+        "durationMs": 142000,
+        "album": "Ferry Song Sessions"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://hollow-bone.bandcamp.com",
+      "instagram": "https://instagram.com/hollowbone"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_elin-sandberg",
+    "slug": "elin-sandberg",
+    "name": "Elin Sandberg",
+    "bio": "A Stockholm project running since 2009. Close-mic'd and bare folk, recorded at home and mixed loud.",
+    "genres": [
+      "folk"
+    ],
+    "homeCity": "Stockholm",
+    "location": {
+      "lat": 59.3206,
+      "lng": 18.1377
+    },
+    "monthlyListeners": 3180,
+    "followers": 689,
+    "popularity": 45,
+    "momentum": 30.5,
+    "formedYear": 2009,
+    "topTracks": [
+      {
+        "id": "trk_elin-sandberg_1",
+        "name": "Ferry Song",
+        "durationMs": 343000,
+        "album": "Winter Wheat Vol. 1"
+      },
+      {
+        "id": "trk_elin-sandberg_2",
+        "name": "Bramble",
+        "durationMs": 375000
+      },
+      {
+        "id": "trk_elin-sandberg_3",
+        "name": "Winter Wheat",
+        "durationMs": 174000
+      },
+      {
+        "id": "trk_elin-sandberg_4",
+        "name": "Long Way Round",
+        "durationMs": 308000
+      },
+      {
+        "id": "trk_elin-sandberg_5",
+        "name": "Ash and Ash",
+        "durationMs": 297000,
+        "album": "Winter Wheat Vol. 1"
+      },
+      {
+        "id": "trk_elin-sandberg_6",
+        "name": "Salt Marsh",
+        "durationMs": 305000,
+        "album": "Winter Wheat Vol. 1"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://elin-sandberg.bandcamp.com",
+      "instagram": "https://instagram.com/elinsandberg",
+      "website": "https://elin-sandberg.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_old-growth",
+    "slug": "old-growth",
+    "name": "Old Growth",
+    "bio": "A Melbourne project running since 2013. Close-mic'd and bare folk, recorded at home and mixed loud.",
+    "genres": [
+      "folk",
+      "freak folk"
+    ],
+    "homeCity": "Melbourne",
+    "location": {
+      "lat": -37.7237,
+      "lng": 144.895
+    },
+    "monthlyListeners": 869,
+    "followers": 201,
+    "popularity": 38,
+    "momentum": 40.7,
+    "formedYear": 2013,
+    "topTracks": [
+      {
+        "id": "trk_old-growth_1",
+        "name": "Ferry Song",
+        "durationMs": 311000,
+        "album": "Winter Wheat Demos"
+      },
+      {
+        "id": "trk_old-growth_2",
+        "name": "Little Hours",
+        "durationMs": 324000
+      },
+      {
+        "id": "trk_old-growth_3",
+        "name": "Homing",
+        "durationMs": 180000,
+        "album": "Winter Wheat Demos"
+      },
+      {
+        "id": "trk_old-growth_4",
+        "name": "Bramble",
+        "durationMs": 253000,
+        "album": "Winter Wheat Demos"
+      },
+      {
+        "id": "trk_old-growth_5",
+        "name": "Winter Wheat",
+        "durationMs": 343000,
+        "album": "Winter Wheat Demos"
+      },
+      {
+        "id": "trk_old-growth_6",
+        "name": "Long Way Round",
+        "durationMs": 184000,
+        "album": "Winter Wheat Demos"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://old-growth.bandcamp.com"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_sable-tongue",
+    "slug": "sable-tongue",
+    "name": "Sable Tongue",
+    "bio": "A Melbourne project running since 2023. Conversational and dense hip-hop, recorded at home and mixed loud.",
+    "genres": [
+      "hip-hop",
+      "experimental"
+    ],
+    "homeCity": "Melbourne",
+    "location": {
+      "lat": -37.7939,
+      "lng": 144.9202
+    },
+    "monthlyListeners": 23300,
+    "followers": 4286,
+    "popularity": 57,
+    "momentum": 19.6,
+    "formedYear": 2023,
+    "topTracks": [
+      {
+        "id": "trk_sable-tongue_1",
+        "name": "Nightshift",
+        "durationMs": 250000,
+        "album": "Rent Week Singles"
+      },
+      {
+        "id": "trk_sable-tongue_2",
+        "name": "Overground",
+        "durationMs": 350000
+      },
+      {
+        "id": "trk_sable-tongue_3",
+        "name": "Bus Route",
+        "durationMs": 211000
+      },
+      {
+        "id": "trk_sable-tongue_4",
+        "name": "No Cosign",
+        "durationMs": 309000,
+        "album": "Rent Week Singles"
+      },
+      {
+        "id": "trk_sable-tongue_5",
+        "name": "Small Rooms",
+        "durationMs": 110000,
+        "album": "Rent Week Singles"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://sable-tongue.bandcamp.com",
+      "instagram": "https://instagram.com/sabletongue"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_off-peak",
+    "slug": "off-peak",
+    "name": "Off Peak",
+    "bio": "Off Peak started as a bedroom experiment in 2023 and turned into one of London's more reliable live acts. Conversational and dense hip-hop.",
+    "genres": [
+      "hip-hop",
+      "experimental"
+    ],
+    "homeCity": "London",
+    "location": {
+      "lat": 51.4421,
+      "lng": -0.1105
+    },
+    "monthlyListeners": 533,
+    "followers": 110,
+    "popularity": 35,
+    "momentum": 0.4,
+    "formedYear": 2023,
+    "topTracks": [
+      {
+        "id": "trk_off-peak_1",
+        "name": "Bus Route",
+        "durationMs": 185000
+      },
+      {
+        "id": "trk_off-peak_2",
+        "name": "Cheap Seats",
+        "durationMs": 261000,
+        "album": "Overground Tape"
+      },
+      {
+        "id": "trk_off-peak_3",
+        "name": "Local Press",
+        "durationMs": 184000,
+        "album": "Overground Tape"
+      },
+      {
+        "id": "trk_off-peak_4",
+        "name": "Nightshift",
+        "durationMs": 100000,
+        "album": "Overground Tape"
+      },
+      {
+        "id": "trk_off-peak_5",
+        "name": "No Cosign",
+        "durationMs": 161000,
+        "album": "Overground Tape"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://off-peak.bandcamp.com",
+      "website": "https://off-peak.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_k-mensah",
+    "slug": "k-mensah",
+    "name": "K. Mensah",
+    "bio": "Formed in Stockholm in 2014, K. Mensah play dusty, sample-heavy hip-hop to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "hip-hop"
+    ],
+    "homeCity": "Stockholm",
+    "location": {
+      "lat": 59.3092,
+      "lng": 18.1703
+    },
+    "monthlyListeners": 6290,
+    "followers": 2911,
+    "popularity": 49,
+    "momentum": 0.7,
+    "formedYear": 2014,
+    "topTracks": [
+      {
+        "id": "trk_k-mensah_1",
+        "name": "Local Press",
+        "durationMs": 320000,
+        "album": "No Cosign Sessions"
+      },
+      {
+        "id": "trk_k-mensah_2",
+        "name": "Bus Route",
+        "durationMs": 233000
+      },
+      {
+        "id": "trk_k-mensah_3",
+        "name": "Overground",
+        "durationMs": 355000,
+        "album": "No Cosign Sessions"
+      },
+      {
+        "id": "trk_k-mensah_4",
+        "name": "Rent Week",
+        "durationMs": 372000,
+        "album": "No Cosign Sessions"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://k-mensah.bandcamp.com",
+      "instagram": "https://instagram.com/kmensah"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_loose-cannon-choir",
+    "slug": "loose-cannon-choir",
+    "name": "Loose Cannon Choir",
+    "bio": "Formed in Los Angeles in 2010, Loose Cannon Choir play conversational and dense hip-hop to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "hip-hop",
+      "jazz rap"
+    ],
+    "homeCity": "Los Angeles",
+    "location": {
+      "lat": 33.9907,
+      "lng": -118.2974
+    },
+    "monthlyListeners": 244000,
+    "followers": 37816,
+    "popularity": 70,
+    "momentum": 44.3,
+    "formedYear": 2010,
+    "topTracks": [
+      {
+        "id": "trk_loose-cannon-choir_1",
+        "name": "Local Press",
+        "durationMs": 353000
+      },
+      {
+        "id": "trk_loose-cannon-choir_2",
+        "name": "Overground",
+        "durationMs": 283000,
+        "album": "Small Rooms EP"
+      },
+      {
+        "id": "trk_loose-cannon-choir_3",
+        "name": "Bus Route",
+        "durationMs": 191000,
+        "album": "Small Rooms EP"
+      },
+      {
+        "id": "trk_loose-cannon-choir_4",
+        "name": "Cheap Seats",
+        "durationMs": 342000,
+        "album": "Small Rooms EP"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://loose-cannon-choir.bandcamp.com",
+      "website": "https://loose-cannon-choir.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_basement-cartography",
+    "slug": "basement-cartography",
+    "name": "Basement Cartography",
+    "bio": "A New York project running since 2020. Conversational and dense hip-hop, recorded at home and mixed loud.",
+    "genres": [
+      "hip-hop",
+      "experimental"
+    ],
+    "homeCity": "New York",
+    "location": {
+      "lat": 40.7216,
+      "lng": -73.9796
+    },
+    "monthlyListeners": 352,
+    "followers": 151,
+    "popularity": 33,
+    "momentum": 10.4,
+    "formedYear": 2020,
+    "topTracks": [
+      {
+        "id": "trk_basement-cartography_1",
+        "name": "Bus Route",
+        "durationMs": 337000,
+        "album": "Small Rooms Demos"
+      },
+      {
+        "id": "trk_basement-cartography_2",
+        "name": "Nightshift",
+        "durationMs": 117000,
+        "album": "Small Rooms Demos"
+      },
+      {
+        "id": "trk_basement-cartography_3",
+        "name": "Local Press",
+        "durationMs": 133000,
+        "album": "Small Rooms Demos"
+      },
+      {
+        "id": "trk_basement-cartography_4",
+        "name": "Rent Week",
+        "durationMs": 252000,
+        "album": "Small Rooms Demos"
+      },
+      {
+        "id": "trk_basement-cartography_5",
+        "name": "No Cosign",
+        "durationMs": 157000,
+        "album": "Small Rooms Demos"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://basement-cartography.bandcamp.com",
+      "instagram": "https://instagram.com/basementcartography"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_teleplasm",
+    "slug": "teleplasm",
+    "name": "Teleplasm",
+    "bio": "Formed in Melbourne in 2018, Teleplasm play cheap synths, expensive melodies synth-pop to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "synth-pop",
+      "italo"
+    ],
+    "homeCity": "Melbourne",
+    "location": {
+      "lat": -37.8616,
+      "lng": 144.9711
+    },
+    "monthlyListeners": 226,
+    "followers": 97,
+    "popularity": 31,
+    "momentum": 37.9,
+    "formedYear": 2018,
+    "topTracks": [
+      {
+        "id": "trk_teleplasm_1",
+        "name": "Boy Racer",
+        "durationMs": 247000
+      },
+      {
+        "id": "trk_teleplasm_2",
+        "name": "Slow Dial",
+        "durationMs": 380000,
+        "album": "Two Way Mirror Vol. 1"
+      },
+      {
+        "id": "trk_teleplasm_3",
+        "name": "Arcade Light",
+        "durationMs": 193000
+      },
+      {
+        "id": "trk_teleplasm_4",
+        "name": "Blue Screen",
+        "durationMs": 125000
+      }
+    ],
+    "links": {
+      "bandcamp": "https://teleplasm.bandcamp.com",
+      "instagram": "https://instagram.com/teleplasm",
+      "website": "https://teleplasm.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_neon-ordinary",
+    "slug": "neon-ordinary",
+    "name": "Neon Ordinary",
+    "bio": "Neon Ordinary started as a bedroom experiment in 2009 and turned into one of New York's more reliable live acts. Cheap synths, expensive melodies synth-pop.",
+    "genres": [
+      "synth-pop",
+      "minimal wave"
+    ],
+    "homeCity": "New York",
+    "location": {
+      "lat": 40.74,
+      "lng": -74.1221
+    },
+    "monthlyListeners": 5590,
+    "followers": 1800,
+    "popularity": 49,
+    "momentum": 21.8,
+    "formedYear": 2009,
+    "topTracks": [
+      {
+        "id": "trk_neon-ordinary_1",
+        "name": "Two Way Mirror",
+        "durationMs": 352000,
+        "album": "Automatic Tape"
+      },
+      {
+        "id": "trk_neon-ordinary_2",
+        "name": "Automatic",
+        "durationMs": 160000,
+        "album": "Automatic Tape"
+      },
+      {
+        "id": "trk_neon-ordinary_3",
+        "name": "Arcade Light",
+        "durationMs": 306000,
+        "album": "Automatic Tape"
+      },
+      {
+        "id": "trk_neon-ordinary_4",
+        "name": "Radio Silence",
+        "durationMs": 285000,
+        "album": "Automatic Tape"
+      },
+      {
+        "id": "trk_neon-ordinary_5",
+        "name": "Blue Screen",
+        "durationMs": 331000,
+        "album": "Automatic Tape"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://neon-ordinary.bandcamp.com",
+      "instagram": "https://instagram.com/neonordinary"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_pale-fire-radio",
+    "slug": "pale-fire-radio",
+    "name": "Pale Fire Radio",
+    "bio": "Pale Fire Radio started as a bedroom experiment in 2019 and turned into one of Melbourne's more reliable live acts. Hooks buried under tape hiss synth-pop.",
+    "genres": [
+      "synth-pop",
+      "minimal wave"
+    ],
+    "homeCity": "Melbourne",
+    "location": {
+      "lat": -37.7419,
+      "lng": 144.8901
+    },
+    "monthlyListeners": 25700,
+    "followers": 5831,
+    "popularity": 57,
+    "momentum": 51.7,
+    "formedYear": 2019,
+    "topTracks": [
+      {
+        "id": "trk_pale-fire-radio_1",
+        "name": "Slow Dial",
+        "durationMs": 217000,
+        "album": "Radio Silence Singles"
+      },
+      {
+        "id": "trk_pale-fire-radio_2",
+        "name": "Boy Racer",
+        "durationMs": 358000,
+        "album": "Radio Silence Singles"
+      },
+      {
+        "id": "trk_pale-fire-radio_3",
+        "name": "Static Bloom",
+        "durationMs": 285000,
+        "album": "Radio Silence Singles"
+      },
+      {
+        "id": "trk_pale-fire-radio_4",
+        "name": "Two Way Mirror",
+        "durationMs": 277000,
+        "album": "Radio Silence Singles"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://pale-fire-radio.bandcamp.com",
+      "instagram": "https://instagram.com/palefireradio",
+      "website": "https://pale-fire-radio.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_astrid-vole",
+    "slug": "astrid-vole",
+    "name": "Astrid Vole",
+    "bio": "Formed in New York in 2016, Astrid Vole play cold and catchy synth-pop to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "synth-pop"
+    ],
+    "homeCity": "New York",
+    "location": {
+      "lat": 40.7306,
+      "lng": -73.9316
+    },
+    "monthlyListeners": 1080,
+    "followers": 217,
+    "popularity": 39,
+    "momentum": 23.4,
+    "formedYear": 2016,
+    "topTracks": [
+      {
+        "id": "trk_astrid-vole_1",
+        "name": "Two Way Mirror",
+        "durationMs": 180000,
+        "album": "Two Way Mirror EP"
+      },
+      {
+        "id": "trk_astrid-vole_2",
+        "name": "Boy Racer",
+        "durationMs": 347000,
+        "album": "Two Way Mirror EP"
+      },
+      {
+        "id": "trk_astrid-vole_3",
+        "name": "Radio Silence",
+        "durationMs": 193000,
+        "album": "Two Way Mirror EP"
+      },
+      {
+        "id": "trk_astrid-vole_4",
+        "name": "Automatic",
+        "durationMs": 375000,
+        "album": "Two Way Mirror EP"
+      },
+      {
+        "id": "trk_astrid-vole_5",
+        "name": "Arcade Light",
+        "durationMs": 290000,
+        "album": "Two Way Mirror EP"
+      },
+      {
+        "id": "trk_astrid-vole_6",
+        "name": "Static Bloom",
+        "durationMs": 267000,
+        "album": "Two Way Mirror EP"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://astrid-vole.bandcamp.com",
+      "instagram": "https://instagram.com/astridvole"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_second-city-sound",
+    "slug": "second-city-sound",
+    "name": "Second City Sound",
+    "bio": "Formed in Berlin in 2017, Second City Sound play cheap synths, expensive melodies synth-pop to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "synth-pop",
+      "italo"
+    ],
+    "homeCity": "Berlin",
+    "location": {
+      "lat": 52.4817,
+      "lng": 13.4554
+    },
+    "monthlyListeners": 209,
+    "followers": 90,
+    "popularity": 30,
+    "momentum": 29.3,
+    "formedYear": 2017,
+    "topTracks": [
+      {
+        "id": "trk_second-city-sound_1",
+        "name": "Automatic",
+        "durationMs": 201000,
+        "album": "Boy Racer EP"
+      },
+      {
+        "id": "trk_second-city-sound_2",
+        "name": "Blue Screen",
+        "durationMs": 346000,
+        "album": "Boy Racer EP"
+      },
+      {
+        "id": "trk_second-city-sound_3",
+        "name": "Boy Racer",
+        "durationMs": 174000,
+        "album": "Boy Racer EP"
+      },
+      {
+        "id": "trk_second-city-sound_4",
+        "name": "Static Bloom",
+        "durationMs": 176000,
+        "album": "Boy Racer EP"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://second-city-sound.bandcamp.com",
+      "instagram": "https://instagram.com/secondcitysound"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_deadweight-youth",
+    "slug": "deadweight-youth",
+    "name": "Deadweight Youth",
+    "bio": "Formed in Berlin in 2014, Deadweight Youth play ninety seconds a song hardcore to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "hardcore"
+    ],
+    "homeCity": "Berlin",
+    "location": {
+      "lat": 52.5872,
+      "lng": 13.4769
+    },
+    "monthlyListeners": 37400,
+    "followers": 5742,
+    "popularity": 59,
+    "momentum": -7.2,
+    "formedYear": 2014,
+    "topTracks": [
+      {
+        "id": "trk_deadweight-youth_1",
+        "name": "Nothing Kept",
+        "durationMs": 338000,
+        "album": "Blunt Instrument EP"
+      },
+      {
+        "id": "trk_deadweight-youth_2",
+        "name": "No Exit Sign",
+        "durationMs": 103000,
+        "album": "Blunt Instrument EP"
+      },
+      {
+        "id": "trk_deadweight-youth_3",
+        "name": "Short Fuse",
+        "durationMs": 344000,
+        "album": "Blunt Instrument EP"
+      },
+      {
+        "id": "trk_deadweight-youth_4",
+        "name": "Held Under",
+        "durationMs": 286000,
+        "album": "Blunt Instrument EP"
+      },
+      {
+        "id": "trk_deadweight-youth_5",
+        "name": "Curfew",
+        "durationMs": 323000,
+        "album": "Blunt Instrument EP"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://deadweight-youth.bandcamp.com",
+      "instagram": "https://instagram.com/deadweightyouth"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_civil-defence",
+    "slug": "civil-defence",
+    "name": "Civil Defence",
+    "bio": "Civil Defence started as a bedroom experiment in 2020 and turned into one of London's more reliable live acts. Furious and unfashionable hardcore.",
+    "genres": [
+      "hardcore"
+    ],
+    "homeCity": "London",
+    "location": {
+      "lat": 51.5153,
+      "lng": -0.2598
+    },
+    "monthlyListeners": 99800,
+    "followers": 33859,
+    "popularity": 65,
+    "momentum": 2.7,
+    "formedYear": 2020,
+    "topTracks": [
+      {
+        "id": "trk_civil-defence_1",
+        "name": "Short Fuse",
+        "durationMs": 316000,
+        "album": "Short Fuse LP"
+      },
+      {
+        "id": "trk_civil-defence_2",
+        "name": "Held Under",
+        "durationMs": 237000,
+        "album": "Short Fuse LP"
+      },
+      {
+        "id": "trk_civil-defence_3",
+        "name": "Curfew",
+        "durationMs": 129000,
+        "album": "Short Fuse LP"
+      },
+      {
+        "id": "trk_civil-defence_4",
+        "name": "Dead Air",
+        "durationMs": 122000,
+        "album": "Short Fuse LP"
+      },
+      {
+        "id": "trk_civil-defence_5",
+        "name": "Nothing Kept",
+        "durationMs": 139000,
+        "album": "Short Fuse LP"
+      },
+      {
+        "id": "trk_civil-defence_6",
+        "name": "No Exit Sign",
+        "durationMs": 274000,
+        "album": "Short Fuse LP"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://civil-defence.bandcamp.com",
+      "instagram": "https://instagram.com/civildefence",
+      "website": "https://civil-defence.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_rot-grid",
+    "slug": "rot-grid",
+    "name": "Rot Grid",
+    "bio": "A London project running since 2014. PA-destroying hardcore, recorded at home and mixed loud.",
+    "genres": [
+      "hardcore",
+      "screamo"
+    ],
+    "homeCity": "London",
+    "location": {
+      "lat": 51.5549,
+      "lng": -0.1059
+    },
+    "monthlyListeners": 127,
+    "followers": 55,
+    "popularity": 27,
+    "momentum": 31.5,
+    "formedYear": 2014,
+    "topTracks": [
+      {
+        "id": "trk_rot-grid_1",
+        "name": "Fire Drill",
+        "durationMs": 300000,
+        "album": "Fire Drill Singles"
+      },
+      {
+        "id": "trk_rot-grid_2",
+        "name": "Nothing Kept",
+        "durationMs": 95000
+      },
+      {
+        "id": "trk_rot-grid_3",
+        "name": "Blunt Instrument",
+        "durationMs": 264000,
+        "album": "Fire Drill Singles"
+      },
+      {
+        "id": "trk_rot-grid_4",
+        "name": "No Exit Sign",
+        "durationMs": 199000,
+        "album": "Fire Drill Singles"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://rot-grid.bandcamp.com",
+      "instagram": "https://instagram.com/rotgrid",
+      "website": "https://rot-grid.net"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_mouthful-of-nails",
+    "slug": "mouthful-of-nails",
+    "name": "Mouthful of Nails",
+    "bio": "Formed in London in 2011, Mouthful of Nails play ninety seconds a song hardcore to rooms that hold about a hundred people. That is on purpose.",
+    "genres": [
+      "hardcore",
+      "powerviolence"
+    ],
+    "homeCity": "London",
+    "location": {
+      "lat": 51.4181,
+      "lng": -0.2123
+    },
+    "monthlyListeners": 128,
+    "followers": 42,
+    "popularity": 27,
+    "momentum": 1.5,
+    "formedYear": 2011,
+    "topTracks": [
+      {
+        "id": "trk_mouthful-of-nails_1",
+        "name": "Blunt Instrument",
+        "durationMs": 259000
+      },
+      {
+        "id": "trk_mouthful-of-nails_2",
+        "name": "Short Fuse",
+        "durationMs": 221000
+      },
+      {
+        "id": "trk_mouthful-of-nails_3",
+        "name": "Held Under",
+        "durationMs": 292000,
+        "album": "Fire Drill Singles"
+      },
+      {
+        "id": "trk_mouthful-of-nails_4",
+        "name": "Dead Air",
+        "durationMs": 373000,
+        "album": "Fire Drill Singles"
+      },
+      {
+        "id": "trk_mouthful-of-nails_5",
+        "name": "Nothing Kept",
+        "durationMs": 127000,
+        "album": "Fire Drill Singles"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://mouthful-of-nails.bandcamp.com",
+      "instagram": "https://instagram.com/mouthfulofnails"
+    },
+    "sourceIds": {}
+  },
+  {
+    "id": "art_total-refusal",
+    "slug": "total-refusal",
+    "name": "Total Refusal",
+    "bio": "Total Refusal have been making furious and unfashionable hardcore out of Stockholm since 2019. Self-released everything so far; you will not find them on a festival poster.",
+    "genres": [
+      "hardcore"
+    ],
+    "homeCity": "Stockholm",
+    "location": {
+      "lat": 59.2731,
+      "lng": 18.0722
+    },
+    "monthlyListeners": 127000,
+    "followers": 20608,
+    "popularity": 66,
+    "momentum": 19.8,
+    "formedYear": 2019,
+    "topTracks": [
+      {
+        "id": "trk_total-refusal_1",
+        "name": "Dead Air",
+        "durationMs": 240000,
+        "album": "Blunt Instrument Singles"
+      },
+      {
+        "id": "trk_total-refusal_2",
+        "name": "Blunt Instrument",
+        "durationMs": 325000,
+        "album": "Blunt Instrument Singles"
+      },
+      {
+        "id": "trk_total-refusal_3",
+        "name": "No Exit Sign",
+        "durationMs": 337000
+      },
+      {
+        "id": "trk_total-refusal_4",
+        "name": "Nothing Kept",
+        "durationMs": 347000,
+        "album": "Blunt Instrument Singles"
+      },
+      {
+        "id": "trk_total-refusal_5",
+        "name": "Held Under",
+        "durationMs": 291000
+      },
+      {
+        "id": "trk_total-refusal_6",
+        "name": "Curfew",
+        "durationMs": 121000,
+        "album": "Blunt Instrument Singles"
+      }
+    ],
+    "links": {
+      "bandcamp": "https://total-refusal.bandcamp.com",
+      "instagram": "https://instagram.com/totalrefusal"
+    },
+    "sourceIds": {}
+  }
+]

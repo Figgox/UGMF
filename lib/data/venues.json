@@ -1,0 +1,325 @@
+[
+  {
+    "id": "berlin-loophole",
+    "name": "Loophole",
+    "city": "Berlin",
+    "address": "226 Sunset Blvd, Berlin",
+    "location": {
+      "lat": 52.4322,
+      "lng": 13.3593
+    },
+    "capacity": 400
+  },
+  {
+    "id": "berlin-schokoladen",
+    "name": "Schokoladen",
+    "city": "Berlin",
+    "address": "110 Bakergatan, Berlin",
+    "location": {
+      "lat": 52.625,
+      "lng": 13.3181
+    },
+    "capacity": 200
+  },
+  {
+    "id": "berlin-urban-spree",
+    "name": "Urban Spree",
+    "city": "Berlin",
+    "address": "28 Hornsgatan, Berlin",
+    "location": {
+      "lat": 52.4961,
+      "lng": 13.4375
+    },
+    "capacity": 120
+  },
+  {
+    "id": "berlin-zukunft-am-ostkreuz",
+    "name": "Zukunft am Ostkreuz",
+    "city": "Berlin",
+    "address": "114 Sunset Blvd, Berlin",
+    "location": {
+      "lat": 52.5326,
+      "lng": 13.3449
+    }
+  },
+  {
+    "id": "berlin-trude-ruth-goldammer",
+    "name": "Trude Ruth & Goldammer",
+    "city": "Berlin",
+    "address": "175 Rivington St, Berlin",
+    "location": {
+      "lat": 52.4961,
+      "lng": 13.3039
+    },
+    "capacity": 50
+  },
+  {
+    "id": "london-the-windmill",
+    "name": "The Windmill",
+    "city": "London",
+    "address": "18 Hornsgatan, London",
+    "location": {
+      "lat": 51.5665,
+      "lng": -0.1454
+    },
+    "capacity": 250
+  },
+  {
+    "id": "london-corsica-studios",
+    "name": "Corsica Studios",
+    "city": "London",
+    "address": "240 Hornsgatan, London",
+    "location": {
+      "lat": 51.5354,
+      "lng": -0.2781
+    },
+    "capacity": 120
+  },
+  {
+    "id": "london-shacklewell-arms",
+    "name": "Shacklewell Arms",
+    "city": "London",
+    "address": "60 Hornsgatan, London",
+    "location": {
+      "lat": 51.5005,
+      "lng": -0.1015
+    },
+    "capacity": 300
+  },
+  {
+    "id": "london-new-river-studios",
+    "name": "New River Studios",
+    "city": "London",
+    "address": "78 Meserole St, London",
+    "location": {
+      "lat": 51.501,
+      "lng": -0.2236
+    },
+    "capacity": 400
+  },
+  {
+    "id": "london-the-victoria",
+    "name": "The Victoria",
+    "city": "London",
+    "address": "148 Bakergatan, London",
+    "location": {
+      "lat": 51.6095,
+      "lng": -0.0355
+    },
+    "capacity": 80
+  },
+  {
+    "id": "new-york-sunny-s",
+    "name": "Sunny's",
+    "city": "New York",
+    "address": "98 Mare St, New York",
+    "location": {
+      "lat": 40.6491,
+      "lng": -74.1302
+    },
+    "capacity": 250
+  },
+  {
+    "id": "new-york-union-pool",
+    "name": "Union Pool",
+    "city": "New York",
+    "address": "197 Kreuzweg, New York",
+    "location": {
+      "lat": 40.7178,
+      "lng": -74.1075
+    },
+    "capacity": 120
+  },
+  {
+    "id": "new-york-trans-pecos",
+    "name": "Trans-Pecos",
+    "city": "New York",
+    "address": "100 Sunset Blvd, New York",
+    "location": {
+      "lat": 40.7336,
+      "lng": -74.1222
+    }
+  },
+  {
+    "id": "new-york-saint-vitus",
+    "name": "Saint Vitus",
+    "city": "New York",
+    "address": "186 Mare St, New York",
+    "location": {
+      "lat": 40.7879,
+      "lng": -73.9785
+    }
+  },
+  {
+    "id": "new-york-the-sultan-room",
+    "name": "The Sultan Room",
+    "city": "New York",
+    "address": "198 Rivington St, New York",
+    "location": {
+      "lat": 40.7518,
+      "lng": -73.9558
+    },
+    "capacity": 50
+  },
+  {
+    "id": "los-angeles-zebulon",
+    "name": "Zebulon",
+    "city": "Los Angeles",
+    "address": "163 Sunset Blvd, Los Angeles",
+    "location": {
+      "lat": 34.0785,
+      "lng": -118.262
+    }
+  },
+  {
+    "id": "los-angeles-non-plus-ultra",
+    "name": "Non Plus Ultra",
+    "city": "Los Angeles",
+    "address": "30 Kreuzweg, Los Angeles",
+    "location": {
+      "lat": 33.9855,
+      "lng": -118.1242
+    },
+    "capacity": 200
+  },
+  {
+    "id": "los-angeles-the-smell",
+    "name": "The Smell",
+    "city": "Los Angeles",
+    "address": "74 Johnston St, Los Angeles",
+    "location": {
+      "lat": 34.0719,
+      "lng": -118.3344
+    },
+    "capacity": 250
+  },
+  {
+    "id": "los-angeles-gold-diggers",
+    "name": "Gold Diggers",
+    "city": "Los Angeles",
+    "address": "35 Kreuzweg, Los Angeles",
+    "location": {
+      "lat": 33.9938,
+      "lng": -118.3642
+    }
+  },
+  {
+    "id": "los-angeles-permanent-records-roadhouse",
+    "name": "Permanent Records Roadhouse",
+    "city": "Los Angeles",
+    "address": "155 Hornsgatan, Los Angeles",
+    "location": {
+      "lat": 34.0442,
+      "lng": -118.3724
+    },
+    "capacity": 300
+  },
+  {
+    "id": "stockholm-under-bron",
+    "name": "Under Bron",
+    "city": "Stockholm",
+    "address": "48 Rivington St, Stockholm",
+    "location": {
+      "lat": 59.3801,
+      "lng": 18.2289
+    },
+    "capacity": 100
+  },
+  {
+    "id": "stockholm-hus-7",
+    "name": "Hus 7",
+    "city": "Stockholm",
+    "address": "207 Hornsgatan, Stockholm",
+    "location": {
+      "lat": 59.3106,
+      "lng": 17.9283
+    },
+    "capacity": 80
+  },
+  {
+    "id": "stockholm-slaktkyrkan",
+    "name": "Slaktkyrkan",
+    "city": "Stockholm",
+    "address": "4 Sunset Blvd, Stockholm",
+    "location": {
+      "lat": 59.3579,
+      "lng": 17.9351
+    }
+  },
+  {
+    "id": "stockholm-landet",
+    "name": "Landet",
+    "city": "Stockholm",
+    "address": "128 Rivington St, Stockholm",
+    "location": {
+      "lat": 59.3997,
+      "lng": 18.0257
+    },
+    "capacity": 400
+  },
+  {
+    "id": "stockholm-kraken",
+    "name": "Kraken",
+    "city": "Stockholm",
+    "address": "227 Meserole St, Stockholm",
+    "location": {
+      "lat": 59.3169,
+      "lng": 18.0312
+    },
+    "capacity": 80
+  },
+  {
+    "id": "melbourne-the-tote",
+    "name": "The Tote",
+    "city": "Melbourne",
+    "address": "145 Kreuzweg, Melbourne",
+    "location": {
+      "lat": -37.7327,
+      "lng": 144.9408
+    },
+    "capacity": 50
+  },
+  {
+    "id": "melbourne-bar-open",
+    "name": "Bar Open",
+    "city": "Melbourne",
+    "address": "234 Johnston St, Melbourne",
+    "location": {
+      "lat": -37.8618,
+      "lng": 144.8689
+    },
+    "capacity": 180
+  },
+  {
+    "id": "melbourne-the-curtin",
+    "name": "The Curtin",
+    "city": "Melbourne",
+    "address": "151 Rivington St, Melbourne",
+    "location": {
+      "lat": -37.8755,
+      "lng": 145.0194
+    },
+    "capacity": 180
+  },
+  {
+    "id": "melbourne-gasometer-hotel",
+    "name": "Gasometer Hotel",
+    "city": "Melbourne",
+    "address": "186 Rivington St, Melbourne",
+    "location": {
+      "lat": -37.7473,
+      "lng": 145.0061
+    },
+    "capacity": 180
+  },
+  {
+    "id": "melbourne-miscellania",
+    "name": "Miscellania",
+    "city": "Melbourne",
+    "address": "150 Kreuzweg, Melbourne",
+    "location": {
+      "lat": -37.7865,
+      "lng": 144.927
+    }
+  }
+]

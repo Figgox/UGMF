@@ -1,0 +1,2138 @@
+[
+  {
+    "id": "evt_0130",
+    "headlinerId": "art_halfway-ghost",
+    "supportIds": [],
+    "venueId": "melbourne-the-curtin",
+    "dayOffset": 0,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/melbourne-the-curtin/130",
+    "priceRange": {
+      "min": 22,
+      "max": 27,
+      "currency": "AUD"
+    }
+  },
+  {
+    "id": "evt_0074",
+    "headlinerId": "art_winter-frequency",
+    "supportIds": [
+      "art_pale-instrument"
+    ],
+    "venueId": "new-york-the-sultan-room",
+    "dayOffset": 0,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/new-york-the-sultan-room/74",
+    "priceRange": {
+      "min": 5,
+      "max": 13,
+      "currency": "USD"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0049",
+    "headlinerId": "art_bad-weather-club",
+    "supportIds": [
+      "art_rot-grid"
+    ],
+    "venueId": "london-new-river-studios",
+    "dayOffset": 0,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/london-new-river-studios/49",
+    "priceRange": {
+      "min": 8,
+      "max": 13,
+      "currency": "GBP"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0023",
+    "headlinerId": "art_verkstad",
+    "supportIds": [
+      "art_tender-machinery",
+      "art_household-fire"
+    ],
+    "venueId": "berlin-trude-ruth-goldammer",
+    "dayOffset": 1,
+    "startLocalTime": "19:00",
+    "ticketUrl": "https://tickets.example.com/berlin-trude-ruth-goldammer/23",
+    "priceRange": {
+      "min": 10,
+      "max": 13,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0037",
+    "headlinerId": "art_mouthful-of-nails",
+    "supportIds": [
+      "art_the-long-corridor",
+      "art_cutty-ranks-appreciation-society"
+    ],
+    "venueId": "london-corsica-studios",
+    "dayOffset": 2,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/london-corsica-studios/37",
+    "priceRange": {
+      "min": 18,
+      "max": 18,
+      "currency": "GBP"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0007",
+    "headlinerId": "art_winter-frequency",
+    "supportIds": [
+      "art_nils-kvarnstrom",
+      "art_cassette-sunday"
+    ],
+    "venueId": "berlin-schokoladen",
+    "dayOffset": 2,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/berlin-schokoladen/7",
+    "priceRange": {
+      "min": 18,
+      "max": 23,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0114",
+    "headlinerId": "art_loose-cannon-choir",
+    "supportIds": [
+      "art_total-refusal",
+      "art_tender-machinery"
+    ],
+    "venueId": "stockholm-slaktkyrkan",
+    "dayOffset": 2,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/stockholm-slaktkyrkan/114",
+    "priceRange": {
+      "min": 15,
+      "max": 18,
+      "currency": "SEK"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0013",
+    "headlinerId": "art_hollow-bone",
+    "supportIds": [
+      "art_deadweight-youth"
+    ],
+    "venueId": "berlin-urban-spree",
+    "dayOffset": 2,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/berlin-urban-spree/13",
+    "priceRange": {
+      "min": 8,
+      "max": 8,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0064",
+    "headlinerId": "art_basement-cartography",
+    "supportIds": [],
+    "venueId": "new-york-trans-pecos",
+    "dayOffset": 2,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/new-york-trans-pecos/64",
+    "priceRange": {
+      "min": 12,
+      "max": 20,
+      "currency": "USD"
+    },
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0111",
+    "headlinerId": "art_the-rendering",
+    "supportIds": [],
+    "venueId": "stockholm-slaktkyrkan",
+    "dayOffset": 3,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/stockholm-slaktkyrkan/111",
+    "priceRange": {
+      "min": 12,
+      "max": 12,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0029",
+    "headlinerId": "art_sub-rosa-sound",
+    "supportIds": [
+      "art_velour-static",
+      "art_the-long-corridor"
+    ],
+    "venueId": "london-the-windmill",
+    "dayOffset": 3,
+    "startLocalTime": "21:00",
+    "priceRange": {
+      "min": 18,
+      "max": 18,
+      "currency": "GBP"
+    }
+  },
+  {
+    "id": "evt_0138",
+    "headlinerId": "art_teleplasm",
+    "supportIds": [
+      "art_sable-tongue",
+      "art_nils-kvarnstrom"
+    ],
+    "venueId": "melbourne-miscellania",
+    "dayOffset": 3,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/melbourne-miscellania/138",
+    "priceRange": {
+      "min": 0,
+      "max": 0,
+      "currency": "AUD"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0018",
+    "headlinerId": "art_verkstad",
+    "supportIds": [
+      "art_deadweight-youth"
+    ],
+    "venueId": "berlin-zukunft-am-ostkreuz",
+    "dayOffset": 3,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/berlin-zukunft-am-ostkreuz/18"
+  },
+  {
+    "id": "evt_0100",
+    "headlinerId": "art_terminal-function",
+    "supportIds": [],
+    "venueId": "stockholm-under-bron",
+    "dayOffset": 4,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/stockholm-under-bron/100",
+    "priceRange": {
+      "min": 5,
+      "max": 8,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0014",
+    "headlinerId": "art_hollow-bone",
+    "supportIds": [
+      "art_second-city-sound"
+    ],
+    "venueId": "berlin-urban-spree",
+    "dayOffset": 4,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/berlin-urban-spree/14",
+    "priceRange": {
+      "min": 10,
+      "max": 13,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0125",
+    "headlinerId": "art_dj-mould",
+    "supportIds": [],
+    "venueId": "melbourne-bar-open",
+    "dayOffset": 5,
+    "startLocalTime": "19:30",
+    "priceRange": {
+      "min": 18,
+      "max": 18,
+      "currency": "AUD"
+    }
+  },
+  {
+    "id": "evt_0108",
+    "headlinerId": "art_the-rendering",
+    "supportIds": [],
+    "venueId": "stockholm-hus-7",
+    "dayOffset": 5,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/stockholm-hus-7/108",
+    "priceRange": {
+      "min": 0,
+      "max": 0,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0079",
+    "headlinerId": "art_sensible-footwear",
+    "supportIds": [],
+    "venueId": "los-angeles-zebulon",
+    "dayOffset": 6,
+    "startLocalTime": "19:00",
+    "ticketUrl": "https://tickets.example.com/los-angeles-zebulon/79",
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0102",
+    "headlinerId": "art_elin-sandberg",
+    "supportIds": [],
+    "venueId": "stockholm-under-bron",
+    "dayOffset": 6,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/stockholm-under-bron/102"
+  },
+  {
+    "id": "evt_0035",
+    "headlinerId": "art_sensible-footwear",
+    "supportIds": [
+      "art_bad-weather-club"
+    ],
+    "venueId": "london-corsica-studios",
+    "dayOffset": 6,
+    "startLocalTime": "20:00",
+    "priceRange": {
+      "min": 10,
+      "max": 15,
+      "currency": "GBP"
+    }
+  },
+  {
+    "id": "evt_0026",
+    "headlinerId": "art_cassette-sunday",
+    "supportIds": [
+      "art_nils-kvarnstrom",
+      "art_the-rendering"
+    ],
+    "venueId": "berlin-trude-ruth-goldammer",
+    "dayOffset": 6,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/berlin-trude-ruth-goldammer/26",
+    "priceRange": {
+      "min": 5,
+      "max": 5,
+      "currency": "EUR"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0084",
+    "headlinerId": "art_winter-frequency",
+    "supportIds": [],
+    "venueId": "los-angeles-non-plus-ultra",
+    "dayOffset": 7,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/los-angeles-non-plus-ultra/84",
+    "priceRange": {
+      "min": 5,
+      "max": 8,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0009",
+    "headlinerId": "art_second-city-sound",
+    "supportIds": [
+      "art_verkstad",
+      "art_hollow-bone"
+    ],
+    "venueId": "berlin-schokoladen",
+    "dayOffset": 7,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/berlin-schokoladen/9",
+    "priceRange": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0088",
+    "headlinerId": "art_aurelia-fen",
+    "supportIds": [
+      "art_room-tone",
+      "art_peach-static"
+    ],
+    "venueId": "los-angeles-the-smell",
+    "dayOffset": 7,
+    "startLocalTime": "20:30",
+    "ticketUrl": "https://tickets.example.com/los-angeles-the-smell/88",
+    "priceRange": {
+      "min": 28,
+      "max": 36,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0022",
+    "headlinerId": "art_the-long-corridor",
+    "supportIds": [
+      "art_old-growth"
+    ],
+    "venueId": "berlin-trude-ruth-goldammer",
+    "dayOffset": 8,
+    "startLocalTime": "20:30",
+    "ticketUrl": "https://tickets.example.com/berlin-trude-ruth-goldammer/22",
+    "priceRange": {
+      "min": 12,
+      "max": 17,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0077",
+    "headlinerId": "art_fathom-blue",
+    "supportIds": [
+      "art_halfway-ghost"
+    ],
+    "venueId": "new-york-the-sultan-room",
+    "dayOffset": 8,
+    "startLocalTime": "20:30",
+    "priceRange": {
+      "min": 10,
+      "max": 18,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0027",
+    "headlinerId": "art_velour-static",
+    "supportIds": [
+      "art_cutty-ranks-appreciation-society"
+    ],
+    "venueId": "london-the-windmill",
+    "dayOffset": 9,
+    "startLocalTime": "19:00"
+  },
+  {
+    "id": "evt_0059",
+    "headlinerId": "art_astrid-vole",
+    "supportIds": [],
+    "venueId": "new-york-sunny-s",
+    "dayOffset": 9,
+    "startLocalTime": "19:30",
+    "priceRange": {
+      "min": 5,
+      "max": 8,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0045",
+    "headlinerId": "art_slow-bloom",
+    "supportIds": [
+      "art_off-peak",
+      "art_bad-weather-club"
+    ],
+    "venueId": "london-new-river-studios",
+    "dayOffset": 9,
+    "startLocalTime": "20:00",
+    "priceRange": {
+      "min": 22,
+      "max": 27,
+      "currency": "GBP"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0134",
+    "headlinerId": "art_off-peak",
+    "supportIds": [],
+    "venueId": "melbourne-gasometer-hotel",
+    "dayOffset": 9,
+    "startLocalTime": "20:30",
+    "ticketUrl": "https://tickets.example.com/melbourne-gasometer-hotel/134",
+    "priceRange": {
+      "min": 10,
+      "max": 13,
+      "currency": "AUD"
+    }
+  },
+  {
+    "id": "evt_0010",
+    "headlinerId": "art_verkstad",
+    "supportIds": [],
+    "venueId": "berlin-schokoladen",
+    "dayOffset": 10,
+    "startLocalTime": "22:00",
+    "ticketUrl": "https://tickets.example.com/berlin-schokoladen/10",
+    "priceRange": {
+      "min": 15,
+      "max": 23,
+      "currency": "EUR"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0087",
+    "headlinerId": "art_aurelia-fen",
+    "supportIds": [
+      "art_winter-frequency",
+      "art_nite-bus"
+    ],
+    "venueId": "los-angeles-the-smell",
+    "dayOffset": 10,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/los-angeles-the-smell/87",
+    "priceRange": {
+      "min": 5,
+      "max": 13,
+      "currency": "USD"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0046",
+    "headlinerId": "art_fathom-blue",
+    "supportIds": [
+      "art_civil-defence",
+      "art_sensible-footwear"
+    ],
+    "venueId": "london-new-river-studios",
+    "dayOffset": 11,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/london-new-river-studios/46",
+    "priceRange": {
+      "min": 10,
+      "max": 15,
+      "currency": "GBP"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0011",
+    "headlinerId": "art_hollow-bone",
+    "supportIds": [
+      "art_deadweight-youth",
+      "art_verkstad"
+    ],
+    "venueId": "berlin-urban-spree",
+    "dayOffset": 12,
+    "startLocalTime": "20:00",
+    "priceRange": {
+      "min": 8,
+      "max": 8,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0137",
+    "headlinerId": "art_sable-tongue",
+    "supportIds": [
+      "art_wet-cement",
+      "art_old-growth"
+    ],
+    "venueId": "melbourne-miscellania",
+    "dayOffset": 12,
+    "startLocalTime": "20:30",
+    "ticketUrl": "https://tickets.example.com/melbourne-miscellania/137",
+    "priceRange": {
+      "min": 8,
+      "max": 16,
+      "currency": "AUD"
+    }
+  },
+  {
+    "id": "evt_0117",
+    "headlinerId": "art_bad-weather-club",
+    "supportIds": [],
+    "venueId": "stockholm-landet",
+    "dayOffset": 12,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/stockholm-landet/117",
+    "priceRange": {
+      "min": 8,
+      "max": 16,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0021",
+    "headlinerId": "art_verkstad",
+    "supportIds": [
+      "art_concrete-pastoral",
+      "art_hollow-bone"
+    ],
+    "venueId": "berlin-zukunft-am-ostkreuz",
+    "dayOffset": 14,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/berlin-zukunft-am-ostkreuz/21",
+    "priceRange": {
+      "min": 18,
+      "max": 23,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0069",
+    "headlinerId": "art_breakwater",
+    "supportIds": [
+      "art_basement-cartography"
+    ],
+    "venueId": "new-york-saint-vitus",
+    "dayOffset": 14,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/new-york-saint-vitus/69",
+    "priceRange": {
+      "min": 15,
+      "max": 23,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0073",
+    "headlinerId": "art_breakwater",
+    "supportIds": [
+      "art_marisol-grove"
+    ],
+    "venueId": "new-york-the-sultan-room",
+    "dayOffset": 14,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/new-york-the-sultan-room/73",
+    "priceRange": {
+      "min": 15,
+      "max": 20,
+      "currency": "USD"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0048",
+    "headlinerId": "art_civil-defence",
+    "supportIds": [
+      "art_second-city-sound"
+    ],
+    "venueId": "london-new-river-studios",
+    "dayOffset": 15,
+    "startLocalTime": "19:00",
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0034",
+    "headlinerId": "art_cutty-ranks-appreciation-society",
+    "supportIds": [
+      "art_rot-grid",
+      "art_sub-rosa-sound"
+    ],
+    "venueId": "london-corsica-studios",
+    "dayOffset": 15,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/london-corsica-studios/34",
+    "priceRange": {
+      "min": 8,
+      "max": 16,
+      "currency": "GBP"
+    }
+  },
+  {
+    "id": "evt_0083",
+    "headlinerId": "art_nite-bus",
+    "supportIds": [
+      "art_loose-cannon-choir",
+      "art_aurelia-fen"
+    ],
+    "venueId": "los-angeles-zebulon",
+    "dayOffset": 16,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/los-angeles-zebulon/83",
+    "priceRange": {
+      "min": 22,
+      "max": 22,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0017",
+    "headlinerId": "art_concrete-pastoral",
+    "supportIds": [
+      "art_deadweight-youth",
+      "art_second-city-sound"
+    ],
+    "venueId": "berlin-zukunft-am-ostkreuz",
+    "dayOffset": 17,
+    "startLocalTime": "20:00",
+    "priceRange": {
+      "min": 5,
+      "max": 13,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0042",
+    "headlinerId": "art_hard-light",
+    "supportIds": [],
+    "venueId": "london-shacklewell-arms",
+    "dayOffset": 17,
+    "startLocalTime": "22:00",
+    "ticketUrl": "https://tickets.example.com/london-shacklewell-arms/42",
+    "priceRange": {
+      "min": 0,
+      "max": 0,
+      "currency": "GBP"
+    },
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0044",
+    "headlinerId": "art_mouthful-of-nails",
+    "supportIds": [
+      "art_slow-bloom"
+    ],
+    "venueId": "london-new-river-studios",
+    "dayOffset": 17,
+    "startLocalTime": "22:00",
+    "ticketUrl": "https://tickets.example.com/london-new-river-studios/44",
+    "priceRange": {
+      "min": 22,
+      "max": 30,
+      "currency": "GBP"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0067",
+    "headlinerId": "art_split-shift",
+    "supportIds": [],
+    "venueId": "new-york-saint-vitus",
+    "dayOffset": 18,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/new-york-saint-vitus/67",
+    "priceRange": {
+      "min": 22,
+      "max": 30,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0104",
+    "headlinerId": "art_terminal-function",
+    "supportIds": [],
+    "venueId": "stockholm-hus-7",
+    "dayOffset": 18,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/stockholm-hus-7/104",
+    "priceRange": {
+      "min": 12,
+      "max": 17,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0127",
+    "headlinerId": "art_sable-tongue",
+    "supportIds": [
+      "art_lithium-gardens"
+    ],
+    "venueId": "melbourne-bar-open",
+    "dayOffset": 19,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/melbourne-bar-open/127"
+  },
+  {
+    "id": "evt_0112",
+    "headlinerId": "art_elin-sandberg",
+    "supportIds": [
+      "art_terminal-function",
+      "art_the-rendering"
+    ],
+    "venueId": "stockholm-slaktkyrkan",
+    "dayOffset": 21,
+    "startLocalTime": "19:30",
+    "priceRange": {
+      "min": 12,
+      "max": 12,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0066",
+    "headlinerId": "art_bad-weather-club",
+    "supportIds": [
+      "art_off-peak",
+      "art_mouthful-of-nails"
+    ],
+    "venueId": "new-york-trans-pecos",
+    "dayOffset": 21,
+    "startLocalTime": "22:00",
+    "ticketUrl": "https://tickets.example.com/new-york-trans-pecos/66",
+    "priceRange": {
+      "min": 22,
+      "max": 25,
+      "currency": "USD"
+    },
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0092",
+    "headlinerId": "art_peach-static",
+    "supportIds": [],
+    "venueId": "los-angeles-gold-diggers",
+    "dayOffset": 22,
+    "startLocalTime": "20:30",
+    "priceRange": {
+      "min": 5,
+      "max": 8,
+      "currency": "USD"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0110",
+    "headlinerId": "art_velour-static",
+    "supportIds": [
+      "art_sensible-footwear",
+      "art_basement-cartography"
+    ],
+    "venueId": "stockholm-slaktkyrkan",
+    "dayOffset": 23,
+    "startLocalTime": "19:00",
+    "ticketUrl": "https://tickets.example.com/stockholm-slaktkyrkan/110",
+    "priceRange": {
+      "min": 28,
+      "max": 28,
+      "currency": "SEK"
+    },
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0133",
+    "headlinerId": "art_cutty-ranks-appreciation-society",
+    "supportIds": [
+      "art_velour-static"
+    ],
+    "venueId": "melbourne-gasometer-hotel",
+    "dayOffset": 24,
+    "startLocalTime": "19:00",
+    "ticketUrl": "https://tickets.example.com/melbourne-gasometer-hotel/133",
+    "priceRange": {
+      "min": 15,
+      "max": 18,
+      "currency": "AUD"
+    }
+  },
+  {
+    "id": "evt_0047",
+    "headlinerId": "art_slow-bloom",
+    "supportIds": [],
+    "venueId": "london-new-river-studios",
+    "dayOffset": 24,
+    "startLocalTime": "19:30",
+    "priceRange": {
+      "min": 10,
+      "max": 15,
+      "currency": "GBP"
+    },
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0050",
+    "headlinerId": "art_off-peak",
+    "supportIds": [],
+    "venueId": "london-the-victoria",
+    "dayOffset": 25,
+    "startLocalTime": "19:00",
+    "ticketUrl": "https://tickets.example.com/london-the-victoria/50",
+    "priceRange": {
+      "min": 5,
+      "max": 8,
+      "currency": "GBP"
+    }
+  },
+  {
+    "id": "evt_0008",
+    "headlinerId": "art_second-city-sound",
+    "supportIds": [
+      "art_household-fire"
+    ],
+    "venueId": "berlin-schokoladen",
+    "dayOffset": 25,
+    "startLocalTime": "19:30",
+    "priceRange": {
+      "min": 5,
+      "max": 5,
+      "currency": "EUR"
+    },
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0006",
+    "headlinerId": "art_concrete-pastoral",
+    "supportIds": [],
+    "venueId": "berlin-schokoladen",
+    "dayOffset": 25,
+    "startLocalTime": "20:30",
+    "ticketUrl": "https://tickets.example.com/berlin-schokoladen/6",
+    "priceRange": {
+      "min": 15,
+      "max": 20,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0093",
+    "headlinerId": "art_winter-frequency",
+    "supportIds": [
+      "art_room-tone"
+    ],
+    "venueId": "los-angeles-gold-diggers",
+    "dayOffset": 25,
+    "startLocalTime": "20:30",
+    "ticketUrl": "https://tickets.example.com/los-angeles-gold-diggers/93",
+    "priceRange": {
+      "min": 0,
+      "max": 0,
+      "currency": "USD"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0043",
+    "headlinerId": "art_cutty-ranks-appreciation-society",
+    "supportIds": [],
+    "venueId": "london-shacklewell-arms",
+    "dayOffset": 25,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/london-shacklewell-arms/43",
+    "priceRange": {
+      "min": 8,
+      "max": 16,
+      "currency": "GBP"
+    }
+  },
+  {
+    "id": "evt_0020",
+    "headlinerId": "art_household-fire",
+    "supportIds": [
+      "art_sensible-footwear"
+    ],
+    "venueId": "berlin-zukunft-am-ostkreuz",
+    "dayOffset": 25,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/berlin-zukunft-am-ostkreuz/20",
+    "priceRange": {
+      "min": 15,
+      "max": 20,
+      "currency": "EUR"
+    },
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0070",
+    "headlinerId": "art_basement-cartography",
+    "supportIds": [
+      "art_marisol-grove",
+      "art_breakwater"
+    ],
+    "venueId": "new-york-saint-vitus",
+    "dayOffset": 25,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/new-york-saint-vitus/70",
+    "priceRange": {
+      "min": 28,
+      "max": 33,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0121",
+    "headlinerId": "art_lithium-gardens",
+    "supportIds": [],
+    "venueId": "stockholm-kraken",
+    "dayOffset": 26,
+    "startLocalTime": "20:30",
+    "ticketUrl": "https://tickets.example.com/stockholm-kraken/121",
+    "priceRange": {
+      "min": 28,
+      "max": 28,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0101",
+    "headlinerId": "art_astrid-vole",
+    "supportIds": [
+      "art_total-refusal",
+      "art_aurelia-fen"
+    ],
+    "venueId": "stockholm-under-bron",
+    "dayOffset": 26,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/stockholm-under-bron/101",
+    "priceRange": {
+      "min": 5,
+      "max": 8,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0030",
+    "headlinerId": "art_cassette-sunday",
+    "supportIds": [
+      "art_civil-defence"
+    ],
+    "venueId": "london-the-windmill",
+    "dayOffset": 28,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/london-the-windmill/30",
+    "priceRange": {
+      "min": 22,
+      "max": 30,
+      "currency": "GBP"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0115",
+    "headlinerId": "art_elin-sandberg",
+    "supportIds": [],
+    "venueId": "stockholm-slaktkyrkan",
+    "dayOffset": 29,
+    "startLocalTime": "19:00",
+    "ticketUrl": "https://tickets.example.com/stockholm-slaktkyrkan/115",
+    "priceRange": {
+      "min": 22,
+      "max": 25,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0055",
+    "headlinerId": "art_slow-bloom",
+    "supportIds": [],
+    "venueId": "london-the-victoria",
+    "dayOffset": 29,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/london-the-victoria/55",
+    "priceRange": {
+      "min": 10,
+      "max": 13,
+      "currency": "GBP"
+    }
+  },
+  {
+    "id": "evt_0105",
+    "headlinerId": "art_total-refusal",
+    "supportIds": [
+      "art_the-rendering"
+    ],
+    "venueId": "stockholm-hus-7",
+    "dayOffset": 29,
+    "startLocalTime": "20:30",
+    "ticketUrl": "https://tickets.example.com/stockholm-hus-7/105"
+  },
+  {
+    "id": "evt_0081",
+    "headlinerId": "art_concrete-pastoral",
+    "supportIds": [
+      "art_room-tone"
+    ],
+    "venueId": "los-angeles-zebulon",
+    "dayOffset": 30,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/los-angeles-zebulon/81",
+    "priceRange": {
+      "min": 8,
+      "max": 16,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0019",
+    "headlinerId": "art_verkstad",
+    "supportIds": [
+      "art_deadweight-youth",
+      "art_household-fire"
+    ],
+    "venueId": "berlin-zukunft-am-ostkreuz",
+    "dayOffset": 30,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/berlin-zukunft-am-ostkreuz/19",
+    "priceRange": {
+      "min": 28,
+      "max": 31,
+      "currency": "EUR"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0025",
+    "headlinerId": "art_civil-defence",
+    "supportIds": [
+      "art_null-object"
+    ],
+    "venueId": "berlin-trude-ruth-goldammer",
+    "dayOffset": 30,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/berlin-trude-ruth-goldammer/25",
+    "priceRange": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0062",
+    "headlinerId": "art_marisol-grove",
+    "supportIds": [
+      "art_basement-cartography",
+      "art_neon-ordinary"
+    ],
+    "venueId": "new-york-union-pool",
+    "dayOffset": 30,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/new-york-union-pool/62",
+    "priceRange": {
+      "min": 12,
+      "max": 20,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0051",
+    "headlinerId": "art_velour-static",
+    "supportIds": [
+      "art_rot-grid",
+      "art_civil-defence"
+    ],
+    "venueId": "london-the-victoria",
+    "dayOffset": 30,
+    "startLocalTime": "22:00",
+    "ticketUrl": "https://tickets.example.com/london-the-victoria/51",
+    "priceRange": {
+      "min": 28,
+      "max": 36,
+      "currency": "GBP"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0085",
+    "headlinerId": "art_tender-machinery",
+    "supportIds": [],
+    "venueId": "los-angeles-non-plus-ultra",
+    "dayOffset": 30,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/los-angeles-non-plus-ultra/85",
+    "priceRange": {
+      "min": 22,
+      "max": 22,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0096",
+    "headlinerId": "art_winter-frequency",
+    "supportIds": [
+      "art_peach-static",
+      "art_room-tone"
+    ],
+    "venueId": "los-angeles-permanent-records-roadhouse",
+    "dayOffset": 31,
+    "startLocalTime": "22:00",
+    "ticketUrl": "https://tickets.example.com/los-angeles-permanent-records-roadhouse/96",
+    "priceRange": {
+      "min": 12,
+      "max": 15,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0107",
+    "headlinerId": "art_cassette-sunday",
+    "supportIds": [
+      "art_household-fire",
+      "art_velour-static"
+    ],
+    "venueId": "stockholm-hus-7",
+    "dayOffset": 33,
+    "startLocalTime": "22:00",
+    "ticketUrl": "https://tickets.example.com/stockholm-hus-7/107",
+    "priceRange": {
+      "min": 22,
+      "max": 22,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0024",
+    "headlinerId": "art_household-fire",
+    "supportIds": [
+      "art_tender-machinery",
+      "art_concrete-pastoral"
+    ],
+    "venueId": "berlin-trude-ruth-goldammer",
+    "dayOffset": 34,
+    "startLocalTime": "19:00",
+    "ticketUrl": "https://tickets.example.com/berlin-trude-ruth-goldammer/24",
+    "priceRange": {
+      "min": 22,
+      "max": 22,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0129",
+    "headlinerId": "art_teleplasm",
+    "supportIds": [],
+    "venueId": "melbourne-the-curtin",
+    "dayOffset": 34,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/melbourne-the-curtin/129",
+    "priceRange": {
+      "min": 12,
+      "max": 17,
+      "currency": "AUD"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0091",
+    "headlinerId": "art_the-quiet-trades",
+    "supportIds": [
+      "art_peach-static"
+    ],
+    "venueId": "los-angeles-gold-diggers",
+    "dayOffset": 35,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/los-angeles-gold-diggers/91",
+    "priceRange": {
+      "min": 8,
+      "max": 13,
+      "currency": "USD"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0118",
+    "headlinerId": "art_terminal-function",
+    "supportIds": [],
+    "venueId": "stockholm-landet",
+    "dayOffset": 35,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/stockholm-landet/118",
+    "priceRange": {
+      "min": 5,
+      "max": 5,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0135",
+    "headlinerId": "art_angular-momentum",
+    "supportIds": [],
+    "venueId": "melbourne-gasometer-hotel",
+    "dayOffset": 36,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/melbourne-gasometer-hotel/135",
+    "priceRange": {
+      "min": 0,
+      "max": 0,
+      "currency": "AUD"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0001",
+    "headlinerId": "art_angular-momentum",
+    "supportIds": [
+      "art_winter-frequency"
+    ],
+    "venueId": "berlin-loophole",
+    "dayOffset": 36,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/berlin-loophole/1",
+    "priceRange": {
+      "min": 8,
+      "max": 8,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0071",
+    "headlinerId": "art_fathom-blue",
+    "supportIds": [
+      "art_room-tone",
+      "art_sable-tongue"
+    ],
+    "venueId": "new-york-saint-vitus",
+    "dayOffset": 36,
+    "startLocalTime": "20:00",
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0099",
+    "headlinerId": "art_household-fire",
+    "supportIds": [],
+    "venueId": "los-angeles-permanent-records-roadhouse",
+    "dayOffset": 36,
+    "startLocalTime": "20:30",
+    "ticketUrl": "https://tickets.example.com/los-angeles-permanent-records-roadhouse/99",
+    "priceRange": {
+      "min": 18,
+      "max": 21,
+      "currency": "USD"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0122",
+    "headlinerId": "art_tender-machinery",
+    "supportIds": [
+      "art_anna-back"
+    ],
+    "venueId": "melbourne-the-tote",
+    "dayOffset": 36,
+    "startLocalTime": "20:30",
+    "ticketUrl": "https://tickets.example.com/melbourne-the-tote/122",
+    "priceRange": {
+      "min": 5,
+      "max": 10,
+      "currency": "AUD"
+    }
+  },
+  {
+    "id": "evt_0086",
+    "headlinerId": "art_peach-static",
+    "supportIds": [
+      "art_aurelia-fen",
+      "art_room-tone"
+    ],
+    "venueId": "los-angeles-non-plus-ultra",
+    "dayOffset": 37,
+    "startLocalTime": "20:00",
+    "priceRange": {
+      "min": 0,
+      "max": 0,
+      "currency": "USD"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0063",
+    "headlinerId": "art_breakwater",
+    "supportIds": [
+      "art_basement-cartography"
+    ],
+    "venueId": "new-york-trans-pecos",
+    "dayOffset": 38,
+    "startLocalTime": "19:00",
+    "ticketUrl": "https://tickets.example.com/new-york-trans-pecos/63",
+    "priceRange": {
+      "min": 15,
+      "max": 20,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0119",
+    "headlinerId": "art_elin-sandberg",
+    "supportIds": [
+      "art_cassette-sunday",
+      "art_terminal-function"
+    ],
+    "venueId": "stockholm-kraken",
+    "dayOffset": 38,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/stockholm-kraken/119",
+    "priceRange": {
+      "min": 10,
+      "max": 13,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0015",
+    "headlinerId": "art_tender-machinery",
+    "supportIds": [],
+    "venueId": "berlin-urban-spree",
+    "dayOffset": 38,
+    "startLocalTime": "20:30",
+    "ticketUrl": "https://tickets.example.com/berlin-urban-spree/15",
+    "priceRange": {
+      "min": 10,
+      "max": 15,
+      "currency": "EUR"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0028",
+    "headlinerId": "art_rot-grid",
+    "supportIds": [
+      "art_off-peak",
+      "art_sensible-footwear"
+    ],
+    "venueId": "london-the-windmill",
+    "dayOffset": 38,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/london-the-windmill/28",
+    "priceRange": {
+      "min": 18,
+      "max": 18,
+      "currency": "GBP"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0052",
+    "headlinerId": "art_aurelia-fen",
+    "supportIds": [
+      "art_pale-instrument",
+      "art_breakwater"
+    ],
+    "venueId": "london-the-victoria",
+    "dayOffset": 39,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/london-the-victoria/52",
+    "priceRange": {
+      "min": 15,
+      "max": 20,
+      "currency": "GBP"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0120",
+    "headlinerId": "art_velour-static",
+    "supportIds": [
+      "art_k-mensah"
+    ],
+    "venueId": "stockholm-kraken",
+    "dayOffset": 39,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/stockholm-kraken/120",
+    "priceRange": {
+      "min": 12,
+      "max": 17,
+      "currency": "SEK"
+    },
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0031",
+    "headlinerId": "art_bad-weather-club",
+    "supportIds": [
+      "art_hard-light",
+      "art_off-peak"
+    ],
+    "venueId": "london-the-windmill",
+    "dayOffset": 41,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/london-the-windmill/31",
+    "priceRange": {
+      "min": 0,
+      "max": 0,
+      "currency": "GBP"
+    }
+  },
+  {
+    "id": "evt_0131",
+    "headlinerId": "art_dj-mould",
+    "supportIds": [
+      "art_old-growth"
+    ],
+    "venueId": "melbourne-the-curtin",
+    "dayOffset": 41,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/melbourne-the-curtin/131",
+    "priceRange": {
+      "min": 8,
+      "max": 8,
+      "currency": "AUD"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0082",
+    "headlinerId": "art_room-tone",
+    "supportIds": [],
+    "venueId": "los-angeles-zebulon",
+    "dayOffset": 41,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/los-angeles-zebulon/82",
+    "priceRange": {
+      "min": 8,
+      "max": 13,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0068",
+    "headlinerId": "art_split-shift",
+    "supportIds": [
+      "art_neon-ordinary",
+      "art_marisol-grove"
+    ],
+    "venueId": "new-york-saint-vitus",
+    "dayOffset": 42,
+    "startLocalTime": "19:00",
+    "ticketUrl": "https://tickets.example.com/new-york-saint-vitus/68",
+    "priceRange": {
+      "min": 0,
+      "max": 0,
+      "currency": "USD"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0080",
+    "headlinerId": "art_winter-frequency",
+    "supportIds": [],
+    "venueId": "los-angeles-zebulon",
+    "dayOffset": 42,
+    "startLocalTime": "20:30",
+    "priceRange": {
+      "min": 10,
+      "max": 10,
+      "currency": "USD"
+    },
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0032",
+    "headlinerId": "art_angular-momentum",
+    "supportIds": [],
+    "venueId": "london-corsica-studios",
+    "dayOffset": 43,
+    "startLocalTime": "22:00",
+    "ticketUrl": "https://tickets.example.com/london-corsica-studios/32",
+    "priceRange": {
+      "min": 15,
+      "max": 20,
+      "currency": "GBP"
+    }
+  },
+  {
+    "id": "evt_0053",
+    "headlinerId": "art_sensible-footwear",
+    "supportIds": [
+      "art_velour-static",
+      "art_the-long-corridor"
+    ],
+    "venueId": "london-the-victoria",
+    "dayOffset": 44,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/london-the-victoria/53",
+    "priceRange": {
+      "min": 12,
+      "max": 15,
+      "currency": "GBP"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0124",
+    "headlinerId": "art_old-growth",
+    "supportIds": [
+      "art_lithium-gardens"
+    ],
+    "venueId": "melbourne-the-tote",
+    "dayOffset": 44,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/melbourne-the-tote/124",
+    "priceRange": {
+      "min": 10,
+      "max": 15,
+      "currency": "AUD"
+    }
+  },
+  {
+    "id": "evt_0036",
+    "headlinerId": "art_lithium-gardens",
+    "supportIds": [
+      "art_rot-grid"
+    ],
+    "venueId": "london-corsica-studios",
+    "dayOffset": 44,
+    "startLocalTime": "22:00",
+    "ticketUrl": "https://tickets.example.com/london-corsica-studios/36",
+    "priceRange": {
+      "min": 15,
+      "max": 18,
+      "currency": "GBP"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0113",
+    "headlinerId": "art_angular-momentum",
+    "supportIds": [
+      "art_terminal-function"
+    ],
+    "venueId": "stockholm-slaktkyrkan",
+    "dayOffset": 45,
+    "startLocalTime": "19:30",
+    "priceRange": {
+      "min": 15,
+      "max": 15,
+      "currency": "SEK"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0033",
+    "headlinerId": "art_sable-tongue",
+    "supportIds": [],
+    "venueId": "london-corsica-studios",
+    "dayOffset": 46,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/london-corsica-studios/33",
+    "priceRange": {
+      "min": 28,
+      "max": 31,
+      "currency": "GBP"
+    }
+  },
+  {
+    "id": "evt_0116",
+    "headlinerId": "art_cassette-sunday",
+    "supportIds": [],
+    "venueId": "stockholm-landet",
+    "dayOffset": 46,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/stockholm-landet/116",
+    "priceRange": {
+      "min": 12,
+      "max": 12,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0003",
+    "headlinerId": "art_concrete-pastoral",
+    "supportIds": [
+      "art_household-fire",
+      "art_tender-machinery"
+    ],
+    "venueId": "berlin-loophole",
+    "dayOffset": 47,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/berlin-loophole/3",
+    "priceRange": {
+      "min": 12,
+      "max": 17,
+      "currency": "EUR"
+    },
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0128",
+    "headlinerId": "art_nite-bus",
+    "supportIds": [
+      "art_cutty-ranks-appreciation-society",
+      "art_dj-mould"
+    ],
+    "venueId": "melbourne-bar-open",
+    "dayOffset": 47,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/melbourne-bar-open/128",
+    "priceRange": {
+      "min": 18,
+      "max": 26,
+      "currency": "AUD"
+    }
+  },
+  {
+    "id": "evt_0040",
+    "headlinerId": "art_the-long-corridor",
+    "supportIds": [
+      "art_off-peak",
+      "art_bad-weather-club"
+    ],
+    "venueId": "london-shacklewell-arms",
+    "dayOffset": 47,
+    "startLocalTime": "22:00",
+    "priceRange": {
+      "min": 8,
+      "max": 8,
+      "currency": "GBP"
+    },
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0005",
+    "headlinerId": "art_second-city-sound",
+    "supportIds": [],
+    "venueId": "berlin-schokoladen",
+    "dayOffset": 48,
+    "startLocalTime": "20:00",
+    "priceRange": {
+      "min": 28,
+      "max": 36,
+      "currency": "EUR"
+    },
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0016",
+    "headlinerId": "art_concrete-pastoral",
+    "supportIds": [
+      "art_household-fire"
+    ],
+    "venueId": "berlin-zukunft-am-ostkreuz",
+    "dayOffset": 48,
+    "startLocalTime": "20:00",
+    "priceRange": {
+      "min": 5,
+      "max": 13,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0098",
+    "headlinerId": "art_peach-static",
+    "supportIds": [],
+    "venueId": "los-angeles-permanent-records-roadhouse",
+    "dayOffset": 49,
+    "startLocalTime": "19:30",
+    "priceRange": {
+      "min": 22,
+      "max": 30,
+      "currency": "USD"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0060",
+    "headlinerId": "art_marisol-grove",
+    "supportIds": [
+      "art_basement-cartography"
+    ],
+    "venueId": "new-york-union-pool",
+    "dayOffset": 49,
+    "startLocalTime": "20:00",
+    "priceRange": {
+      "min": 15,
+      "max": 23,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0012",
+    "headlinerId": "art_concrete-pastoral",
+    "supportIds": [
+      "art_tender-machinery"
+    ],
+    "venueId": "berlin-urban-spree",
+    "dayOffset": 49,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/berlin-urban-spree/12",
+    "priceRange": {
+      "min": 0,
+      "max": 0,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0056",
+    "headlinerId": "art_basement-cartography",
+    "supportIds": [
+      "art_astrid-vole"
+    ],
+    "venueId": "new-york-sunny-s",
+    "dayOffset": 49,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/new-york-sunny-s/56"
+  },
+  {
+    "id": "evt_0075",
+    "headlinerId": "art_astrid-vole",
+    "supportIds": [
+      "art_pale-instrument",
+      "art_marisol-grove"
+    ],
+    "venueId": "new-york-the-sultan-room",
+    "dayOffset": 50,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/new-york-the-sultan-room/75",
+    "priceRange": {
+      "min": 28,
+      "max": 31,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0097",
+    "headlinerId": "art_sub-rosa-sound",
+    "supportIds": [],
+    "venueId": "los-angeles-permanent-records-roadhouse",
+    "dayOffset": 50,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/los-angeles-permanent-records-roadhouse/97",
+    "priceRange": {
+      "min": 22,
+      "max": 22,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0072",
+    "headlinerId": "art_astrid-vole",
+    "supportIds": [],
+    "venueId": "new-york-saint-vitus",
+    "dayOffset": 50,
+    "startLocalTime": "22:00",
+    "priceRange": {
+      "min": 15,
+      "max": 18,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0065",
+    "headlinerId": "art_neon-ordinary",
+    "supportIds": [
+      "art_astrid-vole"
+    ],
+    "venueId": "new-york-trans-pecos",
+    "dayOffset": 51,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/new-york-trans-pecos/65",
+    "priceRange": {
+      "min": 15,
+      "max": 18,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0103",
+    "headlinerId": "art_cassette-sunday",
+    "supportIds": [
+      "art_null-object",
+      "art_angular-momentum"
+    ],
+    "venueId": "stockholm-under-bron",
+    "dayOffset": 51,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/stockholm-under-bron/103",
+    "priceRange": {
+      "min": 5,
+      "max": 13,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0057",
+    "headlinerId": "art_basement-cartography",
+    "supportIds": [],
+    "venueId": "new-york-sunny-s",
+    "dayOffset": 51,
+    "startLocalTime": "20:30",
+    "ticketUrl": "https://tickets.example.com/new-york-sunny-s/57",
+    "priceRange": {
+      "min": 22,
+      "max": 25,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0076",
+    "headlinerId": "art_breakwater",
+    "supportIds": [],
+    "venueId": "new-york-the-sultan-room",
+    "dayOffset": 51,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/new-york-the-sultan-room/76",
+    "priceRange": {
+      "min": 10,
+      "max": 10,
+      "currency": "USD"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0054",
+    "headlinerId": "art_velour-static",
+    "supportIds": [
+      "art_off-peak",
+      "art_bad-weather-club"
+    ],
+    "venueId": "london-the-victoria",
+    "dayOffset": 52,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/london-the-victoria/54",
+    "priceRange": {
+      "min": 18,
+      "max": 26,
+      "currency": "GBP"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0089",
+    "headlinerId": "art_peach-static",
+    "supportIds": [
+      "art_nite-bus",
+      "art_winter-frequency"
+    ],
+    "venueId": "los-angeles-the-smell",
+    "dayOffset": 52,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/los-angeles-the-smell/89",
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0002",
+    "headlinerId": "art_tender-machinery",
+    "supportIds": [
+      "art_hollow-bone",
+      "art_second-city-sound"
+    ],
+    "venueId": "berlin-loophole",
+    "dayOffset": 53,
+    "startLocalTime": "19:00",
+    "ticketUrl": "https://tickets.example.com/berlin-loophole/2"
+  },
+  {
+    "id": "evt_0041",
+    "headlinerId": "art_cutty-ranks-appreciation-society",
+    "supportIds": [
+      "art_velour-static"
+    ],
+    "venueId": "london-shacklewell-arms",
+    "dayOffset": 53,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/london-shacklewell-arms/41"
+  },
+  {
+    "id": "evt_0126",
+    "headlinerId": "art_pale-fire-radio",
+    "supportIds": [
+      "art_anna-back"
+    ],
+    "venueId": "melbourne-bar-open",
+    "dayOffset": 54,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/melbourne-bar-open/126",
+    "priceRange": {
+      "min": 5,
+      "max": 8,
+      "currency": "AUD"
+    }
+  },
+  {
+    "id": "evt_0078",
+    "headlinerId": "art_angular-momentum",
+    "supportIds": [],
+    "venueId": "los-angeles-zebulon",
+    "dayOffset": 54,
+    "startLocalTime": "22:00",
+    "ticketUrl": "https://tickets.example.com/los-angeles-zebulon/78",
+    "priceRange": {
+      "min": 0,
+      "max": 0,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0094",
+    "headlinerId": "art_aurelia-fen",
+    "supportIds": [
+      "art_the-quiet-trades",
+      "art_peach-static"
+    ],
+    "venueId": "los-angeles-gold-diggers",
+    "dayOffset": 55,
+    "startLocalTime": "23:00",
+    "ticketUrl": "https://tickets.example.com/los-angeles-gold-diggers/94",
+    "priceRange": {
+      "min": 28,
+      "max": 36,
+      "currency": "USD"
+    },
+    "ageRestriction": "18+"
+  },
+  {
+    "id": "evt_0038",
+    "headlinerId": "art_pale-instrument",
+    "supportIds": [
+      "art_angular-momentum",
+      "art_sub-rosa-sound"
+    ],
+    "venueId": "london-shacklewell-arms",
+    "dayOffset": 56,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/london-shacklewell-arms/38",
+    "priceRange": {
+      "min": 18,
+      "max": 26,
+      "currency": "GBP"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0058",
+    "headlinerId": "art_breakwater",
+    "supportIds": [],
+    "venueId": "new-york-sunny-s",
+    "dayOffset": 56,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/new-york-sunny-s/58",
+    "priceRange": {
+      "min": 8,
+      "max": 8,
+      "currency": "USD"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0106",
+    "headlinerId": "art_k-mensah",
+    "supportIds": [
+      "art_elin-sandberg"
+    ],
+    "venueId": "stockholm-hus-7",
+    "dayOffset": 56,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/stockholm-hus-7/106",
+    "priceRange": {
+      "min": 10,
+      "max": 18,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0136",
+    "headlinerId": "art_nils-kvarnstrom",
+    "supportIds": [],
+    "venueId": "melbourne-miscellania",
+    "dayOffset": 57,
+    "startLocalTime": "19:30",
+    "priceRange": {
+      "min": 22,
+      "max": 27,
+      "currency": "AUD"
+    }
+  },
+  {
+    "id": "evt_0095",
+    "headlinerId": "art_loose-cannon-choir",
+    "supportIds": [
+      "art_the-quiet-trades"
+    ],
+    "venueId": "los-angeles-permanent-records-roadhouse",
+    "dayOffset": 57,
+    "startLocalTime": "20:00",
+    "ticketUrl": "https://tickets.example.com/los-angeles-permanent-records-roadhouse/95",
+    "priceRange": {
+      "min": 8,
+      "max": 8,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0132",
+    "headlinerId": "art_wet-cement",
+    "supportIds": [
+      "art_split-shift"
+    ],
+    "venueId": "melbourne-the-curtin",
+    "dayOffset": 58,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/melbourne-the-curtin/132",
+    "priceRange": {
+      "min": 22,
+      "max": 25,
+      "currency": "AUD"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0039",
+    "headlinerId": "art_fathom-blue",
+    "supportIds": [
+      "art_civil-defence",
+      "art_sub-rosa-sound"
+    ],
+    "venueId": "london-shacklewell-arms",
+    "dayOffset": 58,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/london-shacklewell-arms/39",
+    "priceRange": {
+      "min": 22,
+      "max": 25,
+      "currency": "GBP"
+    },
+    "ageRestriction": "All ages"
+  },
+  {
+    "id": "evt_0123",
+    "headlinerId": "art_sable-tongue",
+    "supportIds": [
+      "art_pale-fire-radio"
+    ],
+    "venueId": "melbourne-the-tote",
+    "dayOffset": 58,
+    "startLocalTime": "22:00",
+    "ticketUrl": "https://tickets.example.com/melbourne-the-tote/123",
+    "priceRange": {
+      "min": 5,
+      "max": 13,
+      "currency": "AUD"
+    },
+    "ageRestriction": "21+"
+  },
+  {
+    "id": "evt_0061",
+    "headlinerId": "art_pale-instrument",
+    "supportIds": [],
+    "venueId": "new-york-union-pool",
+    "dayOffset": 59,
+    "startLocalTime": "19:00",
+    "ticketUrl": "https://tickets.example.com/new-york-union-pool/61",
+    "priceRange": {
+      "min": 0,
+      "max": 0,
+      "currency": "USD"
+    }
+  },
+  {
+    "id": "evt_0109",
+    "headlinerId": "art_cassette-sunday",
+    "supportIds": [
+      "art_elin-sandberg",
+      "art_the-rendering"
+    ],
+    "venueId": "stockholm-hus-7",
+    "dayOffset": 59,
+    "startLocalTime": "19:30",
+    "ticketUrl": "https://tickets.example.com/stockholm-hus-7/109",
+    "priceRange": {
+      "min": 15,
+      "max": 15,
+      "currency": "SEK"
+    }
+  },
+  {
+    "id": "evt_0004",
+    "headlinerId": "art_deadweight-youth",
+    "supportIds": [],
+    "venueId": "berlin-loophole",
+    "dayOffset": 59,
+    "startLocalTime": "20:30",
+    "ticketUrl": "https://tickets.example.com/berlin-loophole/4",
+    "priceRange": {
+      "min": 22,
+      "max": 27,
+      "currency": "EUR"
+    }
+  },
+  {
+    "id": "evt_0090",
+    "headlinerId": "art_peach-static",
+    "supportIds": [
+      "art_loose-cannon-choir"
+    ],
+    "venueId": "los-angeles-the-smell",
+    "dayOffset": 59,
+    "startLocalTime": "21:00",
+    "ticketUrl": "https://tickets.example.com/los-angeles-the-smell/90",
+    "priceRange": {
+      "min": 8,
+      "max": 16,
+      "currency": "USD"
+    }
+  }
+]

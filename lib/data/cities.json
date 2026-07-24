@@ -1,0 +1,62 @@
+[
+  {
+    "id": "berlin",
+    "name": "Berlin",
+    "region": "Berlin",
+    "country": "DE",
+    "location": {
+      "lat": 52.52,
+      "lng": 13.405
+    }
+  },
+  {
+    "id": "london",
+    "name": "London",
+    "region": "England",
+    "country": "GB",
+    "location": {
+      "lat": 51.5074,
+      "lng": -0.1278
+    }
+  },
+  {
+    "id": "new-york",
+    "name": "New York",
+    "region": "NY",
+    "country": "US",
+    "location": {
+      "lat": 40.7128,
+      "lng": -74.006
+    }
+  },
+  {
+    "id": "los-angeles",
+    "name": "Los Angeles",
+    "region": "CA",
+    "country": "US",
+    "location": {
+      "lat": 34.0522,
+      "lng": -118.2437
+    }
+  },
+  {
+    "id": "stockholm",
+    "name": "Stockholm",
+    "region": "Stockholm",
+    "country": "SE",
+    "location": {
+      "lat": 59.3293,
+      "lng": 18.0686
+    }
+  },
+  {
+    "id": "melbourne",
+    "name": "Melbourne",
+    "region": "VIC",
+    "country": "AU",
+    "location": {
+      "lat": -37.8136,
+      "lng": 144.9631
+    }
+  }
+]
