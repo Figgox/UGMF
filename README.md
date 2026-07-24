@@ -126,22 +126,22 @@ if your NAS is short on RAM or you would rather not keep a checkout on it.
 docker compose -f docker-compose.nas.yml up -d
 ```
 
-It pulls, it does not build — so the image has to exist first. Two one-time
-steps, both on GitHub rather than the NAS:
+It pulls rather than builds, and the image is already published and publicly
+readable — no login, no token, nothing to configure. Verified by fetching the
+manifest anonymously.
 
-1. **Merge to `main`.** The publish workflow triggers on pushes to `main`, so
-   merging is what produces the first image; there is nothing to click. (The
-   Actions tab's "Run workflow" button only appears once a workflow is on the
-   default branch, so it is not an option before the merge.) The build covers
-   x86 and ARM and takes a while — the ARM half is emulated.
-2. **Make the package public** — github.com/users/Figgox/packages → `ugmf` →
-   Package settings. GHCR packages are private by default even on a public
-   repo. Otherwise run `docker login ghcr.io` on the NAS with a personal access
-   token that has `read:packages`.
+`ghcr.io/figgox/ugmf:latest` is a multi-platform image covering `linux/amd64`
+and `linux/arm64`, so Docker picks the right one for your hardware. About 74 MB
+to pull.
 
-Until both are done, `docker compose -f docker-compose.nas.yml up -d` fails with
-a manifest-unknown or denied error, because there is nothing at
-`ghcr.io/figgox/ugmf` to pull.
+The publish workflow runs on every push to `main`, so merging is what refreshes
+it — there is nothing to click. It tags `latest` plus the commit SHA, and gates
+the push behind the test, typecheck and lint suite. The ARM half is emulated,
+so a run takes roughly eight minutes.
+
+If a pull ever fails with `denied`, check the package is still public at
+github.com/users/Figgox/packages → `ugmf` → Package settings, or run
+`docker login ghcr.io` on the NAS with a token that has `read:packages`.
 
 ### Option B — build on the NAS from source
 
