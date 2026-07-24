@@ -35,7 +35,17 @@ services:
       # SPOTIFY_CLIENT_SECRET: ""
       # TICKETMASTER_API_KEY: ""
 
+      # Optional. V8 grows its heap to whatever the host offers, so steady
+      # state is around 280 MB on a roomy machine. Capping it holds the
+      # container at roughly 175 MB instead, which survived 4000 requests here
+      # without a single failure. Worth setting on a small NAS.
+      # NODE_OPTIONS: "--max-old-space-size=128"
+
     # Nothing to mount: the app is stateless and the dataset is in the image.
+
+    # A ceiling well clear of the measured plateau, so a runaway gets caught
+    # without the container being killed in normal use.
+    mem_limit: 512m
 
     healthcheck:
       test:

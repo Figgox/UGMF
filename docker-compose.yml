@@ -22,9 +22,15 @@ services:
       # SPOTIFY_CLIENT_SECRET: ""
       # TICKETMASTER_API_KEY: ""
 
+      # Optional. Holds the container near 175 MB instead of the ~280 MB V8
+      # drifts to when the host has memory to spare. See the README.
+      # NODE_OPTIONS: "--max-old-space-size=128"
+
     # The app holds no state — everything is baked into the image — so there is
     # nothing to mount. Pages that revalidate write to a cache inside the
     # container and are rebuilt on restart.
+
+    mem_limit: 512m
 
     healthcheck:
       test:

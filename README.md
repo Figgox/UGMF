@@ -147,6 +147,30 @@ Either way, open `http://<your-nas-ip>:3000`.
 bundled with only the `node_modules` it actually uses — no toolchain, no dev
 dependencies. It runs as an unprivileged user and is roughly 200 MB.
 
+### What it costs to run
+
+This is the number that matters day to day, and it is separate from what
+building costs — with Option A the NAS never builds at all.
+
+| | Default heap | `--max-old-space-size=128` |
+| --- | --- | --- |
+| Just started | 102 MB | 101 MB |
+| After 500 requests | 199 MB | 169 MB |
+| After 4000 requests | 276 MB | 175 MB |
+| After 25 s idle | 276 MB | 175 MB |
+
+It plateaus rather than climbing — flat from about 2500 requests on, with no
+failed requests in either run. V8 simply grows its heap to suit the machine it
+is on, which is why capping it holds the container near 175 MB. Node also sizes
+that default from total system RAM, so a small NAS will settle lower than these
+figures on its own.
+
+Both compose files set `mem_limit: 512m`, comfortably clear of the plateau, and
+carry a commented-out `NODE_OPTIONS` line if you want the tighter footprint.
+
+`docker stats` will report somewhat more than this, because cgroup accounting
+attributes page cache to the container.
+
 ### Things that actually bite on a NAS
 
 - **Set `TZ`.** It is `Etc/UTC` in `docker-compose.yml`; change it to your zone.
