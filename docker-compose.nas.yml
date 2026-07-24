@@ -1,17 +1,15 @@
-# Paste-and-go UGMF for a NAS.
+# Paste-and-go UGMF for a NAS. This is the only file you need — no source
+# checkout, no Dockerfile, no build. It pulls a prebuilt image that is already
+# published and public, so there is no login or token to set up.
 #
-# This file needs nothing else — no source checkout, no Dockerfile, no build.
-# It pulls a prebuilt image, so it works on a NAS with little RAM and runs on
-# both x86 and ARM (the image is published for both).
+# The image is multi-platform (linux/amd64 + linux/arm64), so Docker picks the
+# right build for your hardware. Around 74 MB to pull.
 #
-# This file pulls an image, it does not build one. The image is published and
-# public, so this works as-is — no login, no token, nothing to set up first.
-#
-# It is multi-platform (linux/amd64 + linux/arm64), so Docker picks the right
-# build for your NAS automatically. Around 74 MB to pull.
+# Save this anywhere on the NAS and run:
 #
 #   docker compose -f docker-compose.nas.yml up -d
 #
+# Or save it as plain docker-compose.yml and the -f becomes unnecessary.
 # Then open http://<your-nas-ip>:3000
 
 services:
