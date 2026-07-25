@@ -9,18 +9,18 @@ services:
       # Change the left number if 3000 is taken on your NAS — e.g. "8080:3000".
       - "3000:3000"
 
+    # Reads SPOTIFY_CLIENT_ID / SPOTIFY_CLIENT_SECRET / TICKETMASTER_API_KEY
+    # from here instead of hardcoding them below, so real keys never end up in
+    # a file that's tracked by git. Create .env.local from .env.example and
+    # fill in your values there.
+    env_file:
+      - .env.local
+
     environment:
       # Set this to your own zone. The container is UTC otherwise, which shifts
-      # show times and the "Tonight" cutoff away from your wall clock — and will
-      # misreport real gig times once the Ticketmaster provider is wired up.
+      # show times and the "Tonight" cutoff away from your wall clock — and
+      # misreports real gig times now that the Ticketmaster provider is live.
       TZ: Etc/UTC
-
-      # Leave these unset to run on the bundled dataset. See .env.example — the
-      # adapters are scaffolded but not implemented yet, so setting them makes
-      # requests fail until they are written.
-      # SPOTIFY_CLIENT_ID: ""
-      # SPOTIFY_CLIENT_SECRET: ""
-      # TICKETMASTER_API_KEY: ""
 
       # Optional. Holds the container near 175 MB instead of the ~280 MB V8
       # drifts to when the host has memory to spare. See the README.

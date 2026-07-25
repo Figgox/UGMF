@@ -56,6 +56,14 @@ export interface MusicProvider {
   readonly name: string;
   searchArtists(query: ArtistQuery): Promise<Page<ArtistSummary>>;
   getArtistBySlug(slug: string): Promise<Artist | null>;
+  /**
+   * Look up by the provider's own id — how EventProvider adapters hydrate a
+   * headliner/support artist. Callers should expect a lighter-weight result
+   * than `getArtistBySlug`: implementations may skip anything expensive to
+   * compute per-artist (e.g. a geocoded home location) since this can run
+   * dozens of times for one event listing.
+   */
+  getArtistById(id: string): Promise<Artist | null>;
   getTopTracks(artistId: string, market?: string): Promise<Track[]>;
   /** Every genre present in the catalogue, for the filter bar. */
   listGenres(): Promise<string[]>;

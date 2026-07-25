@@ -25,10 +25,10 @@ export default function Error({
         Something went wrong fetching artists or shows.
       </p>
       <p className="max-w-md text-xs text-[var(--color-fog)]">
-        If you have just set <code className="text-[var(--color-acid)]">SPOTIFY_CLIENT_ID</code>{" "}
-        or <code className="text-[var(--color-acid)]">TICKETMASTER_API_KEY</code>: those
-        adapters are scaffolded but not implemented yet. Unset them to fall back
-        to the bundled dataset. The server log has the exact error.
+        Usually a live provider problem — an expired/rate-limited{" "}
+        <code className="text-[var(--color-acid)]">SPOTIFY_CLIENT_ID</code> or an invalid{" "}
+        <code className="text-[var(--color-acid)]">TICKETMASTER_API_KEY</code>. Unset either
+        to fall back to the bundled dataset. The server log has the exact error.
       </p>
 
       <button

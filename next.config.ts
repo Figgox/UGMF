@@ -6,9 +6,13 @@ const nextConfig: NextConfig = {
   // it actually uses. This is what the Docker image runs; see Dockerfile.
   output: "standalone",
   images: {
-    // Artist artwork is generated locally today. When the Spotify provider is
-    // wired up, `Artist.imageUrl` starts carrying i.scdn.co URLs.
-    remotePatterns: [{ protocol: "https", hostname: "i.scdn.co" }],
+    remotePatterns: [
+      // Spotify artist artwork.
+      { protocol: "https", hostname: "i.scdn.co" },
+      // Ticketmaster attraction images, used as a fallback when an event's
+      // headliner/support has no Spotify link to hydrate real artwork from.
+      { protocol: "https", hostname: "s1.ticketmaster.com" },
+    ],
   },
 };
 

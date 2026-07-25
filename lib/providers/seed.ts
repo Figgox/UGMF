@@ -21,6 +21,7 @@ import type {
 } from "@/lib/providers/types";
 import { distanceKm } from "@/lib/geo";
 import { effectiveListeners, tierAtMost, tierOf, undergroundScore } from "@/lib/obscurity";
+import { decodeCursor, paginate } from "@/lib/providers/pagination";
 
 /**
  * Seed-data provider — the default until API keys exist.
@@ -102,22 +103,6 @@ function matchesGenres(artist: Artist, genres: readonly string[] | undefined): b
   return genres.some((g) => owned.includes(g.toLowerCase()));
 }
 
-function decodeCursor(cursor: string | null | undefined): number {
-  if (!cursor) return 0;
-  const offset = Number(cursor);
-  return Number.isFinite(offset) && offset > 0 ? Math.floor(offset) : 0;
-}
-
-function paginate<T>(items: T[], offset: number, limit: number): Page<T> {
-  const slice = items.slice(offset, offset + limit);
-  const next = offset + limit;
-  return {
-    items: slice,
-    nextCursor: next < items.length ? String(next) : null,
-    total: items.length,
-  };
-}
-
 // ------------------------------------------------------------------ music ---
 
 export class SeedMusicProvider implements MusicProvider {
@@ -195,6 +180,10 @@ export class SeedMusicProvider implements MusicProvider {
 
   async getArtistBySlug(slug: string): Promise<Artist | null> {
     return artistBySlug.get(slug) ?? null;
+  }
+
+  async getArtistById(id: string): Promise<Artist | null> {
+    return artistById.get(id) ?? null;
   }
 
   async getTopTracks(artistId: string): Promise<Track[]> {

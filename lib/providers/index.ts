@@ -9,26 +9,14 @@ import { TicketmasterEventProvider } from "@/lib/providers/ticketmaster";
  * Provider selection. Server-only, so credentials never reach the browser.
  *
  * The two providers switch over independently — wiring Ticketmaster does not
- * require Spotify to be ready. When Spotify does land it will need a home-city
- * source alongside it (MusicBrainz is the cheap option; see spotify.ts), which
- * is the point at which this factory likely grows into a composite provider
- * that merges the two rather than picking one.
+ * require Spotify to be ready, and Ticketmaster falls back to a stub artist
+ * when Spotify isn't configured (see ticketmaster.ts). Spotify itself sources
+ * artist location from MusicBrainz rather than from Ticketmaster, since an
+ * artist has exactly one home city regardless of which show they're playing.
  */
 
 let musicProvider: MusicProvider | null = null;
 let eventProvider: EventProvider | null = null;
-
-/**
- * Both adapters are scaffolded but not written yet, so selecting one is
- * currently a misconfiguration. Say so once, at selection, rather than leaving
- * someone to work it out from a stack trace on every request.
- */
-function warnUnimplemented(provider: string, unset: string) {
-  console.warn(
-    `[ugmf] ${provider} credentials are set, but that adapter is not implemented yet. ` +
-      `Requests will fail until it is written. Unset ${unset} to use the bundled dataset.`,
-  );
-}
 
 export function getMusicProvider(): MusicProvider {
   if (musicProvider) return musicProvider;
@@ -36,12 +24,10 @@ export function getMusicProvider(): MusicProvider {
   const clientId = process.env.SPOTIFY_CLIENT_ID;
   const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
 
-  if (clientId && clientSecret) {
-    warnUnimplemented("Spotify", "SPOTIFY_CLIENT_ID/SPOTIFY_CLIENT_SECRET");
-    musicProvider = new SpotifyMusicProvider(clientId, clientSecret);
-  } else {
-    musicProvider = new SeedMusicProvider();
-  }
+  musicProvider =
+    clientId && clientSecret
+      ? new SpotifyMusicProvider(clientId, clientSecret)
+      : new SeedMusicProvider();
 
   return musicProvider;
 }
@@ -51,12 +37,12 @@ export function getEventProvider(): EventProvider {
 
   const apiKey = process.env.TICKETMASTER_API_KEY;
 
-  if (apiKey) {
-    warnUnimplemented("Ticketmaster", "TICKETMASTER_API_KEY");
-    eventProvider = new TicketmasterEventProvider(apiKey);
-  } else {
-    eventProvider = new SeedEventProvider();
-  }
+  // Passed as a function rather than imported directly, so this module can
+  // hand Ticketmaster a way to hydrate artists without the two provider
+  // files importing each other.
+  eventProvider = apiKey
+    ? new TicketmasterEventProvider(apiKey, getMusicProvider)
+    : new SeedEventProvider();
 
   return eventProvider;
 }

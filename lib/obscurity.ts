@@ -51,7 +51,13 @@ export function effectiveListeners(
   if (typeof artist.monthlyListeners === "number" && artist.monthlyListeners >= 0) {
     return artist.monthlyListeners;
   }
-  if (typeof artist.followers === "number" && artist.followers >= 0) {
+  // `followers` is a required field on Artist, so a provider with nothing to
+  // report there (e.g. Spotify under a restricted access tier) has to put
+  // *something* — 0 is the only type-safe placeholder. Treating an exact
+  // zero as "no signal" rather than "definitely has zero followers" avoids
+  // miscategorizing those artists as maximally obscure; a real Spotify
+  // artist essentially never has literally 0 followers anyway.
+  if (typeof artist.followers === "number" && artist.followers > 0) {
     return artist.followers * 4;
   }
   if (typeof artist.popularity === "number") {
@@ -70,7 +76,7 @@ export function listenerSource(
   if (typeof artist.monthlyListeners === "number" && artist.monthlyListeners >= 0) {
     return "monthly";
   }
-  if (typeof artist.followers === "number" && artist.followers >= 0) return "followers";
+  if (typeof artist.followers === "number" && artist.followers > 0) return "followers";
   if (typeof artist.popularity === "number") return "popularity";
   return "unknown";
 }

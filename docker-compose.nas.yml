@@ -22,17 +22,17 @@ services:
       # Change the left number if 3000 is taken, e.g. "8080:3000".
       - "3000:3000"
 
+    # Reads SPOTIFY_CLIENT_ID / SPOTIFY_CLIENT_SECRET / TICKETMASTER_API_KEY
+    # from here instead of hardcoding them below, so real keys never end up in
+    # a file that's tracked by git. Create a .env.local next to this file
+    # (copy .env.example) and fill in your values there.
+    env_file:
+      - .env.local
+
     environment:
       # Set this to your own zone. The container is UTC otherwise, which shifts
       # the "Tonight" cutoff and printed show times away from your wall clock.
       TZ: Etc/UTC
-
-      # Leave unset to run on the bundled dataset. The Spotify and Ticketmaster
-      # adapters are scaffolded but not implemented yet — setting these makes
-      # requests fail until they are written.
-      # SPOTIFY_CLIENT_ID: ""
-      # SPOTIFY_CLIENT_SECRET: ""
-      # TICKETMASTER_API_KEY: ""
 
       # Optional. V8 grows its heap to whatever the host offers, so steady
       # state is around 280 MB on a roomy machine. Capping it holds the
