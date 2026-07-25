@@ -47,6 +47,12 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 # directory has to be writable by the unprivileged user.
 RUN mkdir -p .next/cache && chown -R nextjs:nodejs .next
 
+# Where the background sync (lib/sync/) writes artists.json/events.json —
+# the data the site actually reads on every request. Mount a volume here
+# (see docker-compose.yml) so a real dataset survives a container restart
+# instead of starting back on seed data every time.
+RUN mkdir -p .data && chown -R nextjs:nodejs .data
+
 USER nextjs
 EXPOSE 3000
 

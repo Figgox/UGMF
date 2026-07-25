@@ -37,7 +37,6 @@ export default async function DiscoverPage({
       maxListeners: filters.maxListeners,
       onlyWithShows: filters.onlyWithShows,
       dateRange,
-      localsOnly: filters.mode === "local-legends",
       sort: filters.sort,
       limit: PAGE_SIZE * page,
     }),
@@ -88,7 +87,6 @@ export default async function DiscoverPage({
           <span className="font-mono text-[var(--color-chalk)]">{result.total}</span>{" "}
           {result.total === 1 ? "artist" : "artists"}
           {locationLabel && ` near ${locationLabel}`}
-          {filters.mode === "local-legends" && " who are from there"}
         </p>
         {tiers?.length === 1 && tiers[0] && (
           <p className="label">{TIER_BLURBS[tiers[0] as Tier]}</p>

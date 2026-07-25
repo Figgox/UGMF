@@ -26,9 +26,18 @@ services:
       # drifts to when the host has memory to spare. See the README.
       # NODE_OPTIONS: "--max-old-space-size=128"
 
-    # The app holds no state — everything is baked into the image — so there is
-    # nothing to mount. Pages that revalidate write to a cache inside the
-    # container and are rebuilt on restart.
+      # Optional. How often the background job refreshes real Spotify/
+      # Ticketmaster data, in hours. Defaults to 12; never goes below 1
+      # regardless of what's set here — Spotify's rate limit is unforgiving.
+      # Only relevant when the API keys above are set.
+      # SYNC_INTERVAL_HOURS: "12"
+
+    # With no API keys set, the app holds no state and this volume sits
+    # empty — everything is baked into the image. With keys set, this is
+    # where the background sync (see README) persists what it pulls from
+    # Spotify/Ticketmaster, so a restart doesn't start back on seed data.
+    volumes:
+      - ugmf_data:/app/.data
 
     mem_limit: 512m
 
@@ -48,3 +57,6 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
+
+volumes:
+  ugmf_data:

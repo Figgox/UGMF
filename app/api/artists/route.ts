@@ -23,7 +23,6 @@ export async function GET(request: NextRequest) {
       maxListeners: filters.maxListeners,
       onlyWithShows: filters.onlyWithShows,
       dateRange: resolveDateRange(filters),
-      localsOnly: filters.mode === "local-legends",
       sort: filters.sort,
       cursor: filters.cursor,
       limit,

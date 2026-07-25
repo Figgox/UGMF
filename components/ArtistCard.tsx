@@ -4,9 +4,11 @@ import { ArtistArtwork } from "@/components/ArtistArtwork";
 import { ObscurityBadge } from "@/components/ObscurityBadge";
 import { audienceStat, relativeDay, titleCase } from "@/lib/format";
 import { formatDistance } from "@/lib/geo";
+import { listenerSource } from "@/lib/obscurity";
 
 export function ArtistCard({ artist }: { artist: ArtistSummary }) {
   const audience = audienceStat(artist);
+  const hasSignal = listenerSource(artist) !== "unknown";
 
   return (
     <Link
@@ -22,7 +24,7 @@ export function ArtistCard({ artist }: { artist: ArtistSummary }) {
         />
         <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-[var(--color-surface)] to-transparent" />
         <div className="absolute left-3 top-3">
-          <ObscurityBadge tier={artist.tier} score={artist.undergroundScore} />
+          <ObscurityBadge tier={artist.tier} score={artist.undergroundScore} hasSignal={hasSignal} />
         </div>
       </div>
 

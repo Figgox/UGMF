@@ -1,6 +1,7 @@
 import type { Artist, ArtistSummary, City, LatLng, Page, Track } from "@/types";
 import type { ArtistQuery, MusicProvider } from "@/lib/providers/types";
 import { decodeCursor, paginate } from "@/lib/providers/pagination";
+import { sortSummaries } from "@/lib/providers/query";
 import { resolveArtistLocation } from "@/lib/providers/musicbrainz";
 import { effectiveListeners, tierOf, undergroundScore } from "@/lib/obscurity";
 import { distanceKm } from "@/lib/geo";
@@ -32,10 +33,27 @@ const TOKEN_URL = "https://accounts.spotify.com/api/token";
 const API_BASE = "https://api.spotify.com/v1";
 const MAX_INLINE_RETRY_WAIT_SEC = 5;
 
+/**
+ * A distinct type (rather than a plain Error with a message to pattern-match
+ * on) so callers — specifically lib/sync/scheduler.ts, surfacing this via
+ * /api/health — can tell "Spotify is rate-limiting us" apart from any other
+ * failure without string-sniffing.
+ */
+export class SpotifyRateLimitError extends Error {
+  readonly retryAfterSec: number;
+
+  constructor(path: string, retryAfterSec: number) {
+    super(`Spotify rate limit hit on ${path}: retry after ${retryAfterSec}s (not waiting inline)`);
+    this.name = "SpotifyRateLimitError";
+    this.retryAfterSec = retryAfterSec;
+  }
+}
+
 // Spotify's genre-seed endpoint was retired; there is no longer a public
-// "list every genre" call. This is a fixed vocabulary for the filter bar and
-// for sampling a default "browse" result when a search has no q or genres.
-const GENRE_SEEDS = [
+// "list every genre" call. This is a fixed vocabulary for the filter bar,
+// for sampling a default "browse" result when a search has no q or genres,
+// and for the background sync's per-genre discovery (lib/sync/collect.ts).
+export const GENRE_SEEDS = [
   "shoegaze",
   "post-punk",
   "black metal",
@@ -68,8 +86,10 @@ const MAX_SEARCH_CANDIDATES = 60;
 // Spotify's own docs say /search accepts limit up to 50, but newer
 // (Development Mode) apps get a 400 "Invalid limit" above 10 in practice —
 // confirmed by hand against the live API. Using the documented max here
-// would make every search fail, so this stays conservative.
-const SEARCH_PAGE_SIZE = 10;
+// would make every search fail, so this stays conservative. Exported so
+// lib/sync/collect.ts can size its per-sync artist cap off the real number
+// instead of guessing at one.
+export const SEARCH_PAGE_SIZE = 10;
 
 interface SpotifyArtistRaw {
   id: string;
@@ -153,9 +173,7 @@ export class SpotifyMusicProvider implements MusicProvider {
       // burst). Sleeping through that would hang the request rather than
       // fail, so surface it as an error instead of honoring it inline.
       if (retryAfter > MAX_INLINE_RETRY_WAIT_SEC || retriesLeft <= 0) {
-        throw new Error(
-          `Spotify rate limit hit on ${path}: retry after ${retryAfter}s (not waiting inline)`,
-        );
+        throw new SpotifyRateLimitError(path, retryAfter);
       }
       await new Promise((resolve) => setTimeout(resolve, retryAfter * 1000));
       return this.api<T>(path, params, retriesLeft - 1);
@@ -359,29 +377,5 @@ export class SpotifyMusicProvider implements MusicProvider {
   async listAllSlugs(): Promise<string[]> {
     // Real providers have no finite slug list to pre-render; render on demand.
     return [];
-  }
-}
-
-function sortSummaries(items: ArtistSummary[], sort: string): void {
-  const byDistance = (a: ArtistSummary, b: ArtistSummary) =>
-    (a.distanceKm ?? Number.POSITIVE_INFINITY) - (b.distanceKm ?? Number.POSITIVE_INFINITY);
-
-  switch (sort) {
-    case "distance":
-      items.sort((a, b) => byDistance(a, b) || b.undergroundScore - a.undergroundScore);
-      break;
-    case "soonest":
-      // No show data on this provider; fall back to obscurity rather than
-      // pretending every artist is equally "soon".
-      items.sort((a, b) => b.undergroundScore - a.undergroundScore);
-      break;
-    case "momentum":
-      // No provider gives us listener growth; same fallback as the seed
-      // provider uses when momentum is absent.
-      items.sort((a, b) => a.undergroundScore - b.undergroundScore);
-      break;
-    case "obscurity":
-    default:
-      items.sort((a, b) => b.undergroundScore - a.undergroundScore || byDistance(a, b));
   }
 }

@@ -31,11 +31,16 @@ import { slugify } from "@/lib/providers/slug";
 
 const API_BASE = "https://app.ticketmaster.com/discovery/v2";
 
-// Each event hydrates its headliner and support acts via the music provider
-// in parallel, so this bounds how many concurrent artist lookups one request
-// can fan out into (up to ~3x this many) rather than chasing Discovery's own
-// page-size ceiling.
-const MAX_EVENT_PAGE = 25;
+// Discovery's own ceiling (confirmed by hand: size=200 works, size=201 400s).
+const MAX_EVENT_PAGE = 200;
+
+// Each event hydrates its headliner and support acts via the music provider.
+// Hydrating all MAX_EVENT_PAGE events at once — as this used to — fans out
+// into hundreds of concurrent Spotify calls, which is exactly the kind of
+// burst that got this app rate-limited by Spotify for ~23 hours from
+// ordinary use. mapWithConcurrency (below) bounds that fan-out independently
+// of how many events one page pulls back.
+const EVENT_HYDRATION_CONCURRENCY = 5;
 
 interface TmImage {
   url: string;
@@ -144,6 +149,30 @@ function resolveStartsAt(event: TmEvent): string | null {
   return null;
 }
 
+/**
+ * Runs `fn` over `items` with at most `concurrency` in flight at once,
+ * instead of firing every call simultaneously via `Promise.all`. See
+ * EVENT_HYDRATION_CONCURRENCY above for why that bound exists.
+ */
+async function mapWithConcurrency<T, R>(
+  items: readonly T[],
+  concurrency: number,
+  fn: (item: T) => Promise<R>,
+): Promise<R[]> {
+  const results: R[] = new Array(items.length);
+  let next = 0;
+
+  async function worker() {
+    while (next < items.length) {
+      const index = next++;
+      results[index] = await fn(items[index]!);
+    }
+  }
+
+  await Promise.all(Array.from({ length: Math.min(concurrency, items.length) }, worker));
+  return results;
+}
+
 export class TicketmasterEventProvider implements EventProvider {
   readonly name = "ticketmaster";
 
@@ -217,7 +246,14 @@ export class TicketmasterEventProvider implements EventProvider {
 
     const params: Record<string, string> = {
       classificationName: "Music",
-      sort: "date,asc",
+      // Not "date,asc" — with no location filter, that reliably returns a
+      // page dominated by whatever's happening globally in the next few
+      // minutes, which is stale again almost as soon as it's synced
+      // (confirmed by hand: an unfiltered date-ascending pull can age out
+      // to zero usable events within half an hour). "random" instead
+      // samples across the whole window, so a synced batch stays useful for
+      // longer between syncs.
+      sort: "random",
       size: String(MAX_EVENT_PAGE),
     };
     if (query.origin) {
@@ -241,9 +277,9 @@ export class TicketmasterEventProvider implements EventProvider {
     const data = await this.api<TmEventSearchResponse>("/events.json", params);
     const rawEvents = data._embedded?.events ?? [];
 
-    const hydrated = (await Promise.all(rawEvents.map((e) => this.hydrateEvent(e)))).filter(
-      (e): e is HydratedEvent => e !== null,
-    );
+    const hydrated = (
+      await mapWithConcurrency(rawEvents, EVENT_HYDRATION_CONCURRENCY, (e) => this.hydrateEvent(e))
+    ).filter((e): e is HydratedEvent => e !== null);
 
     const filtered = hydrated
       .filter((event) => {
@@ -317,9 +353,9 @@ export class TicketmasterEventProvider implements EventProvider {
     const data = await this.api<TmEventSearchResponse>("/events.json", params);
     const rawEvents = data._embedded?.events ?? [];
 
-    const hydrated = (await Promise.all(rawEvents.map((e) => this.hydrateEvent(e)))).filter(
-      (e): e is HydratedEvent => e !== null,
-    );
+    const hydrated = (
+      await mapWithConcurrency(rawEvents, EVENT_HYDRATION_CONCURRENCY, (e) => this.hydrateEvent(e))
+    ).filter((e): e is HydratedEvent => e !== null);
 
     return hydrated;
   }

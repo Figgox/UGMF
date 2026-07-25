@@ -40,7 +40,18 @@ services:
       # without a single failure. Worth setting on a small NAS.
       # NODE_OPTIONS: "--max-old-space-size=128"
 
-    # Nothing to mount: the app is stateless and the dataset is in the image.
+      # Optional. How often the background job refreshes real Spotify/
+      # Ticketmaster data, in hours. Defaults to 12; never goes below 1
+      # regardless of what's set here. Only relevant when the keys above
+      # are set.
+      # SYNC_INTERVAL_HOURS: "12"
+
+    # With no API keys set, the app is stateless and this volume sits empty.
+    # With keys set, this is where the background sync persists what it
+    # pulls from Spotify/Ticketmaster, so a restart doesn't start back on
+    # seed data — see README.
+    volumes:
+      - ugmf_data:/app/.data
 
     # A ceiling well clear of the measured plateau, so a runaway gets caught
     # without the container being killed in normal use.
@@ -62,3 +73,6 @@ services:
       options:
         max-size: "10m"
         max-file: "3"
+
+volumes:
+  ugmf_data:

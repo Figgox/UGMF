@@ -13,9 +13,9 @@ export type Tier =
   | "established"
   | "mainstream";
 
-export type DiscoveryMode = "crate-digger" | "rising" | "local-legends" | "open";
+export type DiscoveryMode = "crate-digger" | "rising" | "top-artists" | "open";
 
-export type SortKey = "obscurity" | "soonest" | "distance" | "momentum";
+export type SortKey = "obscurity" | "soonest" | "distance" | "momentum" | "popularity";
 
 export interface LatLng {
   lat: number;

@@ -4,13 +4,14 @@ import { ObscurityBadge } from "@/components/ObscurityBadge";
 import { ArtistArtwork } from "@/components/ArtistArtwork";
 import { formatEventDate, formatPrice } from "@/lib/format";
 import { formatDistance } from "@/lib/geo";
-import { tierOf, undergroundScore } from "@/lib/obscurity";
+import { listenerSource, tierOf, undergroundScore } from "@/lib/obscurity";
 
 /** Server component — dates are formatted here and never re-rendered client-side. */
 export function EventRow({ event }: { event: HydratedEvent }) {
   const when = formatEventDate(event.startsAt);
   const price = formatPrice(event.priceRange);
   const tier = tierOf(event.headliner);
+  const hasSignal = listenerSource(event.headliner) !== "unknown";
 
   return (
     <article className="flex gap-4 border-b border-[var(--color-line)] py-4 last:border-b-0">
@@ -41,7 +42,7 @@ export function EventRow({ event }: { event: HydratedEvent }) {
           >
             {event.headliner.name}
           </Link>
-          <ObscurityBadge tier={tier} score={undergroundScore(event.headliner)} />
+          <ObscurityBadge tier={tier} score={undergroundScore(event.headliner)} hasSignal={hasSignal} />
         </div>
 
         {event.support.length > 0 && (

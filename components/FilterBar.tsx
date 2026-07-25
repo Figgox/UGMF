@@ -16,6 +16,7 @@ const RADIUS_STOPS = [5, 10, 25, 50, 100, 250, 500];
 
 const SORTS = [
   { value: "obscurity", label: "Most obscure" },
+  { value: "popularity", label: "Most popular" },
   { value: "distance", label: "Closest" },
   { value: "soonest", label: "Playing soonest" },
   { value: "momentum", label: "Rising fastest" },

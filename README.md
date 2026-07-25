@@ -23,7 +23,7 @@ No API keys needed. The app ships with a bundled dataset and runs immediately.
 | --- | --- |
 | Crate Digger | Under 50k monthly listeners. The deep end. |
 | Rising | 50k–250k, sorted by momentum — about to stop being a secret. |
-| Local Legends | Artists actually *from* your city, any size. |
+| Top Artists | The most well-known artists in the catalogue, most popular first. |
 | Open Feed | Everything nearby, closest first. |
 
 Switching modes never discards a filter you set — genre, radius and date stay
@@ -70,24 +70,67 @@ server-side in `lib/providers/index.ts`:
 
 The two switch independently. The footer always says which is live.
 
-**The Spotify and Ticketmaster adapters are scaffolded, not written.**
-`lib/providers/spotify.ts` and `lib/providers/ticketmaster.ts` carry the full
-auth flow, endpoints and field mapping as comments — filling them in is
-completing a known shape, not fresh research. Until then, setting those
-credentials makes requests fail loudly rather than silently returning nothing.
+**With real keys set, the website still never calls Spotify or Ticketmaster
+per request.** A background job (`lib/sync/`, started once from
+`instrumentation.ts` when the server boots) pulls a fresh dataset on its own
+schedule and writes it to `.data/artists.json` and `.data/events.json` —
+deliberately two separate files, not one combined blob, since Discover and
+Live are two different features that fail, refresh and get debugged
+independently. Every page load reads the relevant one, through
+`CachedMusicProvider`/`CachedEventProvider` (`lib/providers/cache.ts`). This
+exists because Spotify's real rate limits turned out to be unforgiving
+enough that ordinary browsing traffic could get an app throttled for the
+better part of a day — see below.
 
-### Two things worth knowing before wiring Spotify
+- **Refresh interval**: `SYNC_INTERVAL_HOURS`, default 12, floor of 1 no
+  matter what's set — see `.env.example`.
+- **Before the first sync completes** (fresh install, or a container that
+  just started with no synced data yet), the cached providers fall back to
+  the bundled seed dataset rather than serving an empty site.
+- **Persistence**: both files live under `.data/`, which needs to be a
+  mounted volume in Docker (already set up in both compose files) — without
+  it, a restart throws the synced dataset away and starts back on seed data
+  until the next sync.
+- **`/api/health`** reports `sync.lastSyncedAt` and `sync.lastError`, so it's
+  easy to check from outside whether a sync has actually succeeded.
+- Run `npm run sync` to trigger one manually without waiting for the
+  interval (useful right after setting keys for the first time).
+- **`.data/artists.json`/`.data/events.json`** are pretty-printed on
+  purpose — meant to be readable, not just parsed. Each has a plain-text
+  companion regenerated alongside it: `.data/artists.txt` lists every synced
+  artist with tier, obscurity score, and home city/coordinates, most obscure
+  first; `.data/events.txt` lists every synced show soonest-first with
+  headliner and venue. Useful for a quick skim without opening the JSON.
+- **Syncs accumulate, they don't replace.** Every artist and show a sync has
+  ever found stays in the library (keyed by id, so a repeat find just
+  refreshes that entry rather than duplicating it) — a sync that finds
+  nothing this round (rate-limited, a transient error) just contributes
+  nothing, rather than wiping out everyone found so far. Shows are the one
+  exception that shrinks on its own: expired ones get pruned after every
+  merge, so `events.json` stays "what's still upcoming," not a growing
+  historical archive.
 
-- **Spotify does not expose monthly listeners.** The Web API returns
-  `followers.total` and `popularity` (0–100); the monthly-listener figure on
-  artist pages is not in any public endpoint. `Artist.monthlyListeners` is
-  therefore optional everywhere, the obscurity model falls back to followers and
-  then popularity, and the UI labels the number by where it actually came from
-  rather than presenting a follower count as listeners.
-- **Spotify has no artist-location field either.** Home city has to come from
-  somewhere else — MusicBrainz `begin-area` is the usual free answer — which is
-  the point at which the provider factory likely becomes a composite rather than
-  a switch.
+### Real API quirks worth knowing, found by actually running this against
+### live traffic
+
+- **Spotify does not expose monthly listeners**, and a *Development Mode*
+  app — the default for a newly created one, before Spotify approves
+  "Extended Quota Mode" — gets `followers`, `popularity` and `genres`
+  stripped from responses entirely, along with a much lower search-result
+  limit than the documented one. `Artist.monthlyListeners` is optional
+  everywhere, obscurity scoring falls back to followers then popularity then
+  "unknown," and the UI labels the number by where it actually came from. Ask
+  for Extended Quota Mode on the [Spotify dashboard](https://developer.spotify.com/dashboard)
+  once you have real keys — until it's approved, real artist data flows but
+  the obscurity ranking can't tell an unsigned band from a stadium act.
+- **Spotify has no artist-location field either.** Home city comes from
+  MusicBrainz + Nominatim (`lib/providers/musicbrainz.ts`) — free, keyless,
+  but rate-limited to about 1 request/second, which is exactly the kind of
+  cost the background sync exists to absorb instead of a waiting browser.
+- **Spotify's rate limit is real and its `Retry-After` can be enormous** —
+  tens of thousands of seconds after a burst of testing traffic. The Spotify
+  adapter caps how long it will wait inline and fails fast past that rather
+  than hanging a request.
 
 Ticketmaster has its own gap: it does not return venue capacity, and it is thin
 on exactly the 80-capacity DIY bills UGMF cares most about. Both are noted in
@@ -110,9 +153,12 @@ npm run seed     # regenerate lib/data/*.json (deterministic)
 
 ## Self-hosting with Docker
 
-The app is stateless and the whole dataset is baked into the image, so there is
-nothing to mount and no database to run. Health is at `/api/health`, which also
-reports which data source is live.
+On the bundled dataset the app is fully stateless — nothing to mount, no
+database to run, everything baked into the image. With real API keys, one
+small volume (`.data/`) holds the synced-from-Spotify/Ticketmaster cache;
+both compose files already declare it. Health is at `/api/health`, which also
+reports which data source is live and, once real keys are set, when the
+background sync last succeeded.
 
 There are two ways in, and the difference matters on a NAS.
 
@@ -253,6 +299,7 @@ npm run build      # production build
 npm run test       # vitest — obscurity, geo, filters, seed provider
 npm run typecheck  # tsc --noEmit
 npm run lint       # eslint
+npm run sync       # trigger one Spotify/Ticketmaster sync immediately (needs real keys)
 ```
 
 ## API
@@ -275,8 +322,13 @@ lib/obscurity.ts        scoring and tiers
 lib/geo.ts              haversine distance
 lib/filters.ts          URL <-> filter state, date presets
 lib/providers/          the seam between the app and its data
+lib/providers/cache.ts  what the app actually reads when real keys are set
+lib/providers/spotify.ts, ticketmaster.ts   the real adapters — used only by lib/sync/
+lib/sync/               background job: pulls real data, writes .data/artists.json + events.json
 lib/data/               bundled dataset
+instrumentation.ts      starts the sync scheduler when the server boots
 scripts/generate-seed.ts
+scripts/sync.ts         trigger one sync immediately (npm run sync)
 ```
 
 Dates are formatted in server components only, so the server and the browser

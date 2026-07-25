@@ -131,7 +131,7 @@ export function tierAtMost(tier: Tier, ceiling: Tier): boolean {
 export const MODE_TIERS: Record<string, readonly Tier[] | null> = {
   "crate-digger": ["deep-underground", "underground"],
   rising: ["rising"],
-  "local-legends": null,
+  "top-artists": null,
   open: null,
 };
 

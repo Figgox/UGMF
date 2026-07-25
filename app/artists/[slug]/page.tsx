@@ -6,7 +6,7 @@ import { ArtistArtwork } from "@/components/ArtistArtwork";
 import { ObscurityBadge, ObscurityMeter } from "@/components/ObscurityBadge";
 import { TopTracks } from "@/components/TopTracks";
 import { EventRow } from "@/components/EventRow";
-import { TIER_BLURBS, formatListeners, tierOf, undergroundScore } from "@/lib/obscurity";
+import { TIER_BLURBS, formatListeners, listenerSource, tierOf, undergroundScore } from "@/lib/obscurity";
 import { audienceStat, titleCase } from "@/lib/format";
 
 /**
@@ -54,6 +54,7 @@ export default async function ArtistPage({
   const tier = tierOf(artist);
   const score = undergroundScore(artist);
   const audience = audienceStat(artist);
+  const hasSignal = listenerSource(artist) !== "unknown";
 
   const externalLinks = Object.entries(artist.links).filter(([, url]) => Boolean(url)) as [
     string,
@@ -73,7 +74,7 @@ export default async function ArtistPage({
         </div>
 
         <div className="min-w-0">
-          <ObscurityBadge tier={tier} score={score} size="lg" />
+          <ObscurityBadge tier={tier} score={score} hasSignal={hasSignal} size="lg" />
           <h1 className="display mt-2 text-4xl leading-none sm:text-6xl">
             {artist.name}
           </h1>
@@ -108,7 +109,7 @@ export default async function ArtistPage({
         />
         <Stat value={artist.genres[0] ? titleCase(artist.genres[0]) : "—"} label="genre" />
         <div className="bg-[var(--color-surface)] p-4">
-          <ObscurityMeter score={score} tier={tier} />
+          <ObscurityMeter score={score} tier={tier} hasSignal={hasSignal} />
         </div>
       </section>
 

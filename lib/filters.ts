@@ -29,7 +29,7 @@ export const MODES: ReadonlyArray<{
     tagline: "Under 50k listeners. The deep end.",
   },
   { value: "rising", label: "Rising", tagline: "About to stop being a secret." },
-  { value: "local-legends", label: "Local Legends", tagline: "Artists from your city." },
+  { value: "top-artists", label: "Top Artists", tagline: "The most well-known artists here." },
   { value: "open", label: "Open Feed", tagline: "Everything nearby." },
 ];
 
@@ -70,7 +70,7 @@ export const DEFAULTS: DiscoverFilters = {
 };
 
 const MODE_VALUES = MODES.map((m) => m.value);
-const SORT_VALUES: SortKey[] = ["obscurity", "soonest", "distance", "momentum"];
+const SORT_VALUES: SortKey[] = ["obscurity", "soonest", "distance", "momentum", "popularity"];
 const PRESET_VALUES = new Set<DatePreset>([
   "any",
   "tonight",
@@ -162,8 +162,8 @@ export function defaultSortFor(mode: DiscoveryMode): SortKey {
   switch (mode) {
     case "rising":
       return "momentum";
-    case "local-legends":
-      return "distance";
+    case "top-artists":
+      return "popularity";
     case "open":
       return "distance";
     default:

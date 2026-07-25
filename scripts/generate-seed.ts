@@ -336,8 +336,8 @@ for (const venue of venues) {
   const showCount = int(3, 6);
 
   for (let i = 0; i < showCount; i++) {
-    // Mostly local bills, sometimes a touring act — that mix is what makes
-    // "Local Legends" mode meaningfully different from the open feed.
+    // Mostly local bills, sometimes a touring act — realistic variety, and
+    // keeps a `localsOnly` query meaningfully different from the open feed.
     const pool = chance(0.7) && locals.length ? locals : artists;
     const bill = sample(pool, Math.min(pool.length, int(1, 3)));
     if (!bill.length) continue;

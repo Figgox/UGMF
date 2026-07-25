@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
-import { providerStatus } from "@/lib/providers";
+import { dataStatus } from "@/lib/providers";
 
 export const metadata: Metadata = {
   title: {
@@ -16,8 +16,10 @@ export const viewport: Viewport = {
   themeColor: "#08080a",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const providers = providerStatus();
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const status = await dataStatus();
+  const usingPlaceholders = status.placeholderArtists || status.placeholderEvents;
+  const rateLimited = status.syncErrorCode === "RATE_LIMITED";
 
   return (
     <html lang="en">
@@ -29,11 +31,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 gap-y-1 px-4 py-6">
             <span className="label">UGMF</span>
             <span className="label">
-              Artists: {providers.music} · Events: {providers.events}
+              Artists: {status.music} · Events: {status.events}
             </span>
-            {providers.music === "seed" && (
+            {status.music === "seed" && status.events === "seed" && (
               <span className="label">
                 Demo dataset — set Spotify / Ticketmaster keys to go live
+              </span>
+            )}
+            {usingPlaceholders && (
+              <span className="label text-[var(--color-tier-rising)]">
+                ● Showing placeholder data
+                {rateLimited
+                  ? " — Spotify rate limited, retrying automatically"
+                  : " — waiting on the first sync"}
               </span>
             )}
           </div>
